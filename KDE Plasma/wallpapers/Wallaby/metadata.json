@@ -1,0 +1,15 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "",
+                "Name": "Gary Smith"
+            }
+        ],
+        "Id": "Wallaby",
+        "License": "MIT",
+        "Version": "1.0",
+        "Name": "Wallaby",
+         "Name[x-test]": "Wallaby"
+    }
+}

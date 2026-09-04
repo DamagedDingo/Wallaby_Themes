@@ -1,0 +1,18 @@
+{
+    "KPlugin": {
+        "Authors": [
+            {
+                "Name": "Gary Smith"
+            }
+        ],
+        "Category": "",
+        "Description": "Wallaby colours for KDE Plasma panels, launchers and widgets",
+        "EnabledByDefault": true,
+        "Id": "Wallaby",
+        "License": "MIT",
+        "Name": "Wallaby",
+        "Version": "1.3",
+        "Website": "https://github.com/jeremie2/Wallaby"
+    },
+    "X-Plasma-API": "5.0"
+}

@@ -1,0 +1,28 @@
+{
+    "KPackageStructure": "Plasma/LookAndFeel",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "",
+                "Name": "Gary Smith"
+            }
+        ],
+        "Category": "Global Themes (Plasma 6)",
+        "ServiceTypes": [
+            "Plasma/LookAndFeel"
+        ],
+        "Description": "Wallaby Desktop Design",
+        "Id": "Wallaby",
+        "Version": "1.0",
+        "License": "MIT",
+        "Name": "Wallaby",
+        "Website": "",
+        "Keywords": "Desktop;Workspace;Appearance;Look and Feel;",
+        "X-Plasma-APIVersion": "2",
+        "X-Plasma-MainScript": "default"
+    },
+    "X-KPackage-Dependencies": [
+    "kns://icons.knsrc/api.kde-look.org/1166289",
+    "kns://xcursor.knsrc/api.kde-look.org/1197432"
+]
+}

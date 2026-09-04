@@ -1,0 +1,10 @@
+/home/deck/.local/share/plasma/look-and-feel/Wallaby
+/home/deck/.local/share/plasma/desktoptheme/Wallaby
+/home/deck/.local/share/wallpapers/Wallaby
+/home/deck/.local/share/color-schemes/Wallaby.colors
+
+
+ids required still.
+Colour scheme: kns://colorschemes.knsrc/api.kde-look.org/NEW_ID
+Plasma style:  kns://plasma-themes.knsrc/api.kde-look.org/NEW_ID
+Wallpaper:     kns://wallpaper.knsrc/api.kde-look.org/NEW_ID

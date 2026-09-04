@@ -1,0 +1,11 @@
+[Settings]
+FallbackTheme=default
+
+[BlurBehindEffect]
+enabled=true
+
+[Wallpaper]
+defaultWallpaperTheme=
+defaultFileSuffix=.png
+defaultWidth=1920
+defaultHeight=1080
