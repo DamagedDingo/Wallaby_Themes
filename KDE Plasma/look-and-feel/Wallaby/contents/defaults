@@ -18,3 +18,10 @@ LayoutName=org.kde.breeze.desktop
 
 [plasmarc][Theme]
 name=Wallaby
+
+[Wallpaper]
+Image=Wallaby
+
+[kwinrc][org.kde.kdecoration2]
+library=org.kde.kwin.aurorae
+theme=kwin4_decoration_qml_plastik

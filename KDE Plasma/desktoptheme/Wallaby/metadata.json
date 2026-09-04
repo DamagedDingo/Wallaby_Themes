@@ -9,7 +9,7 @@
         "Description": "Wallaby colours for KDE Plasma panels, launchers and widgets",
         "EnabledByDefault": true,
         "Id": "Wallaby",
-        "License": "MIT",
+        "License": "CC0-1.0",
         "Name": "Wallaby",
         "Version": "1.0",
         "Website": ""
