@@ -9,7 +9,6 @@
         "Id": "Wallaby",
         "License": "CC0-1.0",
         "Version": "1.0",
-        "Name": "Wallaby",
-         "Name[x-test]": "Wallaby"
+        "Name": "Wallaby"
     }
 }

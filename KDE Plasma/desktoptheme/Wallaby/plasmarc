@@ -7,5 +7,5 @@ enabled=true
 [Wallpaper]
 defaultWallpaperTheme=
 defaultFileSuffix=.png
-defaultWidth=2560
-defaultHeight=1600
+defaultWidth=3840
+defaultHeight=2160
