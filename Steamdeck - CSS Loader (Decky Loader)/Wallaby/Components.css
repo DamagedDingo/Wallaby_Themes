@@ -1,0 +1,123 @@
+/* Adapted from Srcery v0.7.0; see LICENSE and ATTRIBUTION.md. */
+/* Menu Elements */
+
+/* Menu Element */
+.gamepadpagedsettings_ContentTransition_NCmol .gamepaddialog_Field_S-_La,
+.gamepadpagedsettings_ContentTransition_NCmol .gamepaddialog_FieldLabel_3b0U-,
+.gamepadpagedsettings_ContentTransition_NCmol .gamepaddialog_FieldDescription_2OJfk,
+.gamepadpagedsettings_ContentTransition_NCmol .appproperties_Title_3zuIC,
+.controllerconfigurator_BottomSection_3RsRf .gamepaddialog_Field_S-_La,
+.controllerconfigurator_BottomSection_3RsRf .gamepaddialog_FieldLabel_3b0U-,
+.controllerconfigurator_BottomSection_3RsRf .gamepaddialog_FieldDescription_2OJfk,
+.controllerconfigurator_BottomSection_3RsRf .appproperties_Title_3zuIC
+{
+  color: var(--wallaby-text);
+}
+
+.gamepadpagedsettings_ContentTransition_NCmol .gamepaddialog_Field_S-_La .networksettings_Checkmark_x5D0R {
+  color: var(--wallaby-positive);
+}
+
+.gamepadpagedsettings_ContentTransition_NCmol .gamepaddialog_Field_S-_La .networksettings_LockIcon_1oafX.networksettings_LargerIcon_14aKC {
+  color: var(--wallaby-muted);
+}
+
+/* Selected Menu Element */
+.gamepadpagedsettings_ContentTransition_NCmol .gamepaddialog_Field_S-_La.gamepaddialog_HighlightOnFocus_wE4V6.gpfocus, 
+.gamepadpagedsettings_ContentTransition_NCmol .gamepaddialog_Field_S-_La.gamepaddialog_HighlightOnFocus_wE4V6.gpfocuswithin,
+.controllerconfigurator_BottomSection_3RsRf .gamepaddialog_Field_S-_La.gamepaddialog_HighlightOnFocus_wE4V6.gpfocus, 
+.controllerconfigurator_BottomSection_3RsRf .gamepaddialog_Field_S-_La.gamepaddialog_HighlightOnFocus_wE4V6.gpfocuswithin 
+{
+  background: var(--wallaby-accent);
+  color: var(--wallaby-background);
+  animation-name: wallabySettingsFocus;
+}
+
+/* Selected menu Element Text */
+.gamepadpagedsettings_ContentTransition_NCmol .gamepaddialog_Field_S-_La.gamepaddialog_HighlightOnFocus_wE4V6.gpfocuswithin .gamepaddialog_FieldLabel_3b0U-,
+.controllerconfigurator_BottomSection_3RsRf .gamepaddialog_Field_S-_La.gamepaddialog_HighlightOnFocus_wE4V6.gpfocuswithin .gamepaddialog_FieldLabel_3b0U- {
+  color: var(--wallaby-background);
+}
+
+.gamepadpagedsettings_ContentTransition_NCmol .gamepaddialog_Field_S-_La.gamepaddialog_HighlightOnFocus_wE4V6.gpfocuswithin .gamepaddialog_FieldDescription_2OJfk,
+.controllerconfigurator_BottomSection_3RsRf .gamepaddialog_Field_S-_La.gamepaddialog_HighlightOnFocus_wE4V6.gpfocuswithin .gamepaddialog_FieldDescription_2OJfk {
+  color: var(--wallaby-background);
+}
+
+/* Button */
+.gamepadpagedsettings_ContentTransition_NCmol .gamepaddialog_Field_S-_La .gamepaddialog_FieldChildren_14_HB .DialogButton:enabled,
+.gamepadpagedsettings_ContentTransition_NCmol .gamepaddialog_Field_S-_La .gamepaddialog_FieldChildren_14_HB .DialogButton.Primary:enabled,
+.gamepadpagedsettings_ContentTransition_NCmol .DialogCheckbox_Container,
+.controllerconfigurator_BottomSection_3RsRf .gamepaddialog_Field_S-_La .gamepaddialog_FieldChildren_14_HB .DialogButton:enabled,
+.controllerconfigurator_BottomSection_3RsRf .gamepaddialog_Field_S-_La .gamepaddialog_FieldChildren_14_HB .DialogButton.Primary:enabled,
+.controllerconfigurator_BottomSection_3RsRf .DialogCheckbox_Container
+{
+  background: var(--wallaby-view);
+  color: var(--wallaby-text);
+}
+
+/* Highlighted Button */
+.gamepadpagedsettings_ContentTransition_NCmol .gamepaddialog_Field_S-_La .gamepaddialog_FieldChildren_14_HB .DialogButton.gpfocus:enabled,
+.gamepadpagedsettings_ContentTransition_NCmol .gamepaddialog_Field_S-_La .gamepaddialog_FieldChildren_14_HB .DialogButton.gpfocus.Primary:enabled,
+.controllerconfigurator_BottomSection_3RsRf .gamepaddialog_Field_S-_La .gamepaddialog_FieldChildren_14_HB .DialogButton.gpfocus:enabled,
+.controllerconfigurator_BottomSection_3RsRf .gamepaddialog_Field_S-_La .gamepaddialog_FieldChildren_14_HB .DialogButton.gpfocus.Primary:enabled
+{
+  background: var(--wallaby-button);
+  color: var(--wallaby-accent);
+}
+
+button.gamepaddialog_Button_1kn70.DialogButton,
+button.gamepaddialog_Button_1kn70.DialogButton.Primary,
+button.gamepaddialog_Button_1kn70.DialogButton:enabled,
+button.gamepaddialog_Button_1kn70.DialogButton:enabled.Primary,
+button.gamepaddialog_Button_1kn70.DialogButton:active,
+button.gamepaddialog_Button_1kn70.DialogButton:active.Primary,
+button.gamepaddialog_Button_1kn70.DialogButton:hover,
+button.gamepaddialog_Button_1kn70.DialogButton:hover.Primary {
+  background: var(--wallaby-view);
+  color: var(--wallaby-text);
+}
+
+button.gamepaddialog_Button_1kn70.DialogButton.gpfocus,
+button.gamepaddialog_Button_1kn70.DialogButton:active,
+button.gamepaddialog_Button_1kn70.DialogButton:enabled.gpfocus,
+button.gamepaddialog_Button_1kn70.DialogButton:enabled:active,
+button.gamepaddialog_Button_1kn70.DialogButton:active.gpfocus,
+button.gamepaddialog_Button_1kn70.DialogButton:active:active,
+button.gamepaddialog_Button_1kn70.DialogButton:hover.gpfocus,
+button.gamepaddialog_Button_1kn70.DialogButton:hover:active,
+button.gamepaddialog_Button_1kn70.DialogButton:enabled:active:hover,
+button.gamepaddialog_Button_1kn70.DialogButton:enabled:active:hover.gpfocus,
+button.gamepaddialog_Button_1kn70.DialogButton:enabled:active:hover:active,
+button.gamepaddialog_Button_1kn70.DialogButton:enabled:active:hover.Primary {
+  background: var(--wallaby-accent);
+  color: var(--wallaby-background);
+}
+
+.gamepaddialog_BasicTextInput_3GCBi, .gamepaddialog_BasicTextInput_3GCBi:not(.disabled, .gpfocus):hover {
+  background: var(--wallaby-view);
+  color: var(--wallaby-text);
+}
+
+.gamepaddialog_BasicTextInput_3GCBi.gpfocus, .gamepaddialog_BasicTextInput_3GCBi.gpfocus:hover {
+  background: var(--wallaby-accent);
+  color: var(--wallaby-background);
+}
+
+/* TODO where to put this? */
+.CSSLoader_FullTheme_ToggleContainer > div {
+  background: transparent;
+  color: var(--wallaby-text);
+}
+
+/* Selected controls remain teal when focus moves into their child options. */
+button.gamepaddialog_Button_1kn70.DialogButton.gamepaddialog_ActiveAndUnfocused_11tOP:not(.gpfocus) {
+  background: var(--wallaby-view) !important;
+  color: var(--wallaby-text) !important;
+}
+
+/* Cover direct focus as well as focus within a yellow field. */
+.gamepaddialog_Field_S-_La.gamepaddialog_HighlightOnFocus_wE4V6:is(.gpfocus, .gpfocuswithin) :is(.gamepaddialog_FieldLabel_3b0U-, .gamepaddialog_FieldDescription_2OJfk, .gamepaddialog_LabelFieldValue_5Mylh),
+.gamepaddialog_BasicTextInput_3GCBi.gpfocus::placeholder {
+  color: var(--wallaby-background) !important;
+}

@@ -1,0 +1,12 @@
+/* Adapted from Srcery v0.7.0; see LICENSE and ATTRIBUTION.md. */
+.progressbar_ProgressBar_1-nHj {
+  background-color: var(--wallaby-view) !important;
+}
+
+.progressbar_ProgressBar_1-nHj.gpfocus {
+  background-color: var(--wallaby-background) !important;
+}
+
+.progressbar_ProgressBar_1-nHj .progressbar_Percent_2_0Jo {
+  background-color: var(--wallaby-accent) !important;
+}

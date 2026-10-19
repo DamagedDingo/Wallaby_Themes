@@ -1,0 +1,51 @@
+/* Adapted from Srcery v0.7.0; see LICENSE and ATTRIBUTION.md. */
+.achievementsheader_StatsBlock__gDkI .achievementsheader_Stat_28omE .achievementsheader_Label_17zZl {
+  color: var(--wallaby-text);
+}
+
+.achievementsheader_StatsBlock__gDkI .achievementsheader_Stat_28omE .achievementsheader_TextValue_3SUIg {
+  color: var(--wallaby-text);
+}
+
+.achievementslist_AchievementList_1UXC2 {
+  background-color: var(--wallaby-background);
+}
+
+.achievementslist_GlobalAchievementListItem_316Uo,
+.achievementslist_AchievementListItemBase_2Kmn7.Panel.Focusable {
+  background-color: var(--wallaby-surface);
+}
+
+.achievementslist_Container_cvw8D {
+  color: var(--wallaby-text);
+}
+
+.achievementslist_HeaderText_OAV6Q,
+.achievementslist_GlobalAchievementListItem_316Uo .achievementslist_UnlockContainer_1vd1p svg,
+.achievementslist_GlobalAchievementListItem_316Uo .achievementslist_Content_UWkKt .achievementslist_Info_Zoy4C .achievementslist_Title_3LS_N,
+.achievementslist_GlobalAchievementListItem_316Uo .achievementslist_Content_UWkKt .achievementslist_Percent_17WmA,
+.achievementslist_AchievementTitle_17dhG {
+  color: var(--wallaby-text);
+}
+
+.achievementslist_GlobalAchievementListItem_316Uo .achievementslist_Content_UWkKt .achievementslist_Info_Zoy4C .achievementslist_Description_231ll,
+.achievementslist_AchievementDescription_1WP2Y {
+  color: var(--wallaby-text);
+}
+
+.achievementslist_AchievementGlobalPercentage_VQbek.achievementslist_InBody_2IpxM,
+.achievementslist_UnlockDate_2fFW2 {
+  color: var(--wallaby-muted);
+}
+
+.achievementslist_AchievementListItemBase_2Kmn7.gpfocuswithin.Panel.Focusable {
+  background-color: var(--wallaby-view);
+}
+
+.achievementspage_Background_ODpLj .achievementspage_Blur_3Fjw7 {
+  background: linear-gradient(to bottom, transparent, var(--wallaby-background), var(--wallaby-background));
+}
+
+.achievementslist_GlobalAchievementListItem_316Uo .achievementslist_Content_UWkKt .achievementslist_ProgressFill_2lgHV {
+  background-color: var(--wallaby-view)
+}

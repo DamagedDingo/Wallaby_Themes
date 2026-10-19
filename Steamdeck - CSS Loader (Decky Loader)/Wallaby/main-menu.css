@@ -1,0 +1,53 @@
+/* Adapted from Srcery v0.7.0; see LICENSE and ATTRIBUTION.md. */
+.mainmenu_Menu_23IDi:not(.mainmenu_VR_1ABsh) {
+  background: var(--wallaby-background);
+}
+
+.mainmenu_Menu_23IDi:not(.mainmenu_VR_1ABsh) [role="menuitem"] {
+  color: var(--wallaby-text);
+  position: relative;
+  transform: none !important;
+}
+
+/* Semantic roles survive stale CSS Loader item/icon/label translations. */
+.mainmenu_Menu_23IDi:not(.mainmenu_VR_1ABsh) [role="menuitem"] > div {
+  color: inherit !important;
+}
+
+.mainmenu_Menu_23IDi .mainmenu_RunnningAppSeparator_33RkH {
+  background: none;
+  background-color: var(--wallaby-accent);
+  height: 3px;
+  border-radius: 3px;
+  margin: 5px auto;
+}
+
+.mainmenu_Menu_23IDi.mainmenu_Collapsed_3I23q:not(.mainmenu_VR_1ABsh) > .mainmenu_RunnningAppSeparator_33RkH {
+  transform: translateX(0);
+}
+
+.mainmenu_Menu_23IDi:not(.mainmenu_VR_1ABsh) [role="menuitem"]:is(.gpfocus, :focus-visible) {
+  background: var(--wallaby-accent);
+  color: var(--wallaby-background);
+  transform: none !important;
+  animation-name: none !important;
+}
+
+/* Active dot */
+.mainmenu_Menu_23IDi:not(.mainmenu_VR_1ABsh) .mainmenu_ActiveDot_1uLVH {
+  background: transparent;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.mainmenu_Menu_23IDi:not(.mainmenu_VR_1ABsh) .mainmenu_Item_2w9Tp .mainmenu_ActiveDot_1uLVH {
+  margin-left: 10px;
+}
+
+.mainmenu_Menu_23IDi:not(.mainmenu_VR_1ABsh) .mainmenu_ActiveDot_1uLVH::before {
+  content: "›";
+  color: var(--wallaby-text);
+  font-size: 1.5rem;
+  margin-bottom: 3px
+}

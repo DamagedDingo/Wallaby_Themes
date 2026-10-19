@@ -1,0 +1,227 @@
+/* Adapted from Srcery v0.7.0; see LICENSE and ATTRIBUTION.md. */
+@keyframes quickaccessmenu_ItemFocusAnim-darkerGrey-nocolor_2YeD3 {
+  from {
+    background: var(--wallaby-muted);
+  }
+
+  to {
+    background: var(--wallaby-view);
+  }
+}
+
+.quickaccessmenu_QuickAccessMenu_V0cr-,
+.quickaccessmenu_Title_34nl5,
+.quickaccessmenu_Tab_1S76C {
+  background: var(--wallaby-background);
+}
+
+#QuickAccess-Menu .header_Header_1E_SL.header_InQuickAccess_2mRo5 {
+  background-color: var(--wallaby-background);
+}
+
+#QuickAccess-Menu .quickaccessmenu_Menu_1gJzx::before {
+  background: var(--wallaby-view);
+}
+
+.quickaccessmenu_Tabs_3Ag1w::after,
+.gamepaddialog_Field_S-_La.gamepaddialog_WithBottomSeparatorStandard_3s1Rk::after,
+.gamepaddialog_Field_S-_La.gamepaddialog_WithBottomSeparatorThick_28hmy::after {
+  background: var(--wallaby-view);
+}
+
+.quickaccessmenu_Title_34nl5 {
+  box-shadow: none;
+}
+
+.quickaccessmenu_Menu_1gJzx .quickaccessmenu_Title_34nl5, 
+#QuickAccess-Menu .quickaccessmenu_Menu_1gJzx .FriendsListSteamDeckTopSection .TabPanelHeader {
+  color: var(--wallaby-text);
+}
+
+.quickaccesscontrols_Text_1hJkB, 
+.gamepaddialog_FieldLabel_3b0U-, 
+.perf_Text_3gY4m,
+.quickaccesscontrols_BatteryPercentageLabel_3Rxxi,
+.quickaccessmenu_Tab_1S76C svg {
+  color: var(--wallaby-text);
+}
+
+.quickaccessmenu_Tab_1S76C svg {
+  color: var(--wallaby-muted);
+}
+
+.quickaccessmenu_QuickAccessMenu_V0cr- .standardtemplates_NewIndicator_3aotN svg {
+  color: var(--wallaby-positive);
+}
+
+.quickaccessmenu_Tab_1S76C.quickaccessmenu_Selected_2QHMu.gpfocus svg {
+  color: var(--wallaby-accent);
+}
+
+.quickaccessmenu_Menu_1gJzx .quickaccesscontrols_BatteryProjectedValue_1mTo6 {
+  color: var(--wallaby-text);
+}
+
+.quickaccessmenu_Menu_1gJzx button.gamepaddialog_Button_1kn70.DialogButton {
+  background: var(--wallaby-view);
+  color: var(--wallaby-text);
+}
+
+.quickaccessmenu_Menu_1gJzx button.gpfocuswithin.gamepaddialog_Button_1kn70.DialogButton {
+  background: var(--wallaby-accent);
+  color: var(--wallaby-background);
+}
+
+/* Highlights */
+
+/* Bg highlight */
+.gamepaddialog_Field_S-_La.gamepaddialog_HighlightOnFocus_wE4V6.gpfocus, 
+.gamepaddialog_Field_S-_La.gamepaddialog_HighlightOnFocus_wE4V6.gpfocuswithin {
+  background: var(--wallaby-accent) !important;
+}
+
+/* Label, Description highlight, PerfProfSetting text, BatteryText */
+.gamepaddialog_Field_S-_La.gpfocuswithin .gamepaddialog_FieldLabel_3b0U-, 
+.gamepaddialog_Field_S-_La.gpfocuswithin .gamepaddialog_FieldDescription_2OJfk,
+.gamepaddialog_Field_S-_La.gpfocuswithin .perf_Text_3gY4m,
+.gamepaddialog_Field_S-_La.gpfocuswithin .quickaccesscontrols_BatteryProjectedValue_1mTo6,
+.gamepaddialog_Field_S-_La.gpfocuswithin .quickaccesscontrols_BatteryProjectedLabel_4hS40,
+.gamepaddialog_Field_S-_La.gpfocuswithin .quickaccesscontrols_BatteryPercentageLabel_3Rxxi,
+.gamepaddialog_Field_S-_La.gpfocuswithin .gamepadslider_Icon_21uKi {
+  color: var(--wallaby-background) !important;
+}
+
+/* Side highlight */
+.quickaccessmenu_Tab_1S76C.quickaccessmenu_Selected_2QHMu {
+  background: var(--wallaby-accent);
+}
+
+/* Focused Side highlight */
+.quickaccessmenu_Tab_1S76C.quickaccessmenu_Selected_2QHMu.gpfocus {
+  background: var(--wallaby-accent);
+}
+
+/* Side icon highlight */
+.gpfocus.quickaccessmenu_Tab_1S76C.quickaccessmenu_Selected_2QHMu::before {
+  filter: brightness(0);
+}
+
+/* Remote Play */
+.quickaccessmenu_QuickAccessMenu_V0cr- .remoteplay_QuickAccessTitle_2dcwM {
+  color: var(--wallaby-accent);
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.quickaccessmenu_QuickAccessMenu_V0cr- .remoteplay_QuickAccessControlIcon_Ll-uN {
+  filter: var(--wallaby-light-filter);
+}
+
+/** Friends list */
+.friendlist {
+  background: var(--wallaby-background) !important;
+}
+
+.GamepadMode.friendlist .TabPanelHeader .NewChatGroupButton,
+.GamepadMode.friendlist .TabPanelHeader .AddFriendButton,
+.GamepadMode.friendlist .TabPanelHeader .FriendsInvitesButton {
+  background-color: var(--wallaby-view);
+  color: var(--wallaby-muted);
+}
+
+.GamepadMode.friendlist .TabPanelHeader .FriendsInvitesButton .PendingInviteCount {
+  background-color: var(--wallaby-negative);
+}
+
+.friendslist_TabBumper_3Jr0A svg path {
+  fill: var(--wallaby-text) !important;
+}
+
+.friendslist_TabBumper_3Jr0A svg path:first-of-type {
+  stroke: var(--wallaby-text) !important;
+  fill: none !important;
+}
+
+.FriendsListTab {
+  color: var(--wallaby-muted) !important;
+}
+
+.FriendsListTab.Active {
+  color: var(--wallaby-text) !important;
+}
+
+/** Performance */
+.gamepaddialog_Field_S-_La .quickaccesscontrols_BatterySectionContainer_3h5MR .quickaccesscontrols_BatteryIcon_39aNh svg path:first-child {
+  fill: var(--wallaby-text);
+}
+
+.gamepaddialog_Field_S-_La .quickaccesscontrols_BatterySectionContainer_3h5MR .quickaccesscontrols_BatteryIcon_39aNh svg svg rect {
+  fill: var(--wallaby-positive);
+}
+
+.gamepaddialog_Field_S-_La .quickaccesscontrols_BatterySectionContainer_3h5MR .quickaccesscontrols_BatteryIcon_39aNh svg path:last-child,
+.gamepaddialog_Field_S-_La.gpfocus.gpfocuswithin .quickaccesscontrols_BatterySectionContainer_3h5MR .quickaccesscontrols_BatteryIcon_39aNh svg path:first-child {
+  fill: var(--wallaby-background);
+}
+
+/* Notifications */
+
+.quickaccesscontrols_QuickAccessNotifications_2HCcx>div:not(:hover)+div:not(:hover)::before,
+.quickaccesscontrols_QuickAccessNotifications_2HCcx:not(.quickaccesscontrols_VR_31jiF)>div:not(:focus)+div:not(:focus)::before,
+.quickaccesscontrols_QuickAccessNotifications_2HCcx>div:not(:hover)+div.quickaccesscontrols_EmptyNotifications_1g1_n::before {
+  border-bottom-color: var(--wallaby-view);
+}
+
+.quickaccessmenu_QuickAccessMenu_V0cr- .standardtemplates_StandardTemplateContainer_1adpx:hover,
+.quickaccessmenu_QuickAccessMenu_V0cr- .standardtemplates_StandardTemplateContainer_1adpx.gpfocus {
+  background-color: var(--wallaby-view);
+}
+
+.quickaccessmenu_QuickAccessMenu_V0cr- .standardtemplates_PinnedTemplate_2eBei .standardtemplates_PinnedBody_1Ljgv,
+.quickaccessmenu_QuickAccessMenu_V0cr- .standardtemplates_StandardTemplate_3e_DB .standardtemplates_Icon_19g_L > svg,
+.quickaccessmenu_QuickAccessMenu_V0cr- .standardtemplates_PinnedTemplate_2eBei .standardtemplates_Icon_19g_L > svg,
+.quickaccessmenu_QuickAccessMenu_V0cr- .standardtemplates_StandardTemplate_3e_DB .standardtemplates_Title_1WlRE,
+.quickaccessmenu_QuickAccessMenu_V0cr- .standardtemplates_PinnedTemplate_2eBei .standardtemplates_Title_1WlRE,
+.quickaccessmenu_QuickAccessMenu_V0cr- .notificationcontent_AchievementTextSection_mJ3Nu .notificationcontent_Name_1juF1 {
+  color: var(--wallaby-text);
+  filter: var(--wallaby-light-filter);
+}
+
+.quickaccessmenu_QuickAccessMenu_V0cr- .notificationcontent_Timestamp_3q7nN,
+.quickaccessmenu_QuickAccessMenu_V0cr- .notificationcontent_TimestampDesktop_1N5mc,
+.quickaccessmenu_QuickAccessMenu_V0cr- .standardtemplates_StandardTemplate_3e_DB .standardtemplates_Timestamp_2vSvC,
+.quickaccessmenu_QuickAccessMenu_V0cr- .standardtemplates_PinnedTemplate_2eBei .standardtemplates_Timestamp_2vSvC {
+  color: var(--wallaby-muted);
+}
+
+.quickaccessmenu_QuickAccessMenu_V0cr- .BasicUI .notificationcontent_AchievementTextSection_mJ3Nu .notificationcontent_Desc_2zm3G,
+.quickaccessmenu_QuickAccessMenu_V0cr- .standardtemplates_StandardTemplate_3e_DB .notificationcontent_AchievementTextSection_mJ3Nu .notificationcontent_Desc_2zm3G,
+.quickaccessmenu_QuickAccessMenu_V0cr- .standardtemplates_StandardTemplate_3e_DB .standardtemplates_StandardNotificationDescription_1Ldq1,
+.quickaccessmenu_QuickAccessMenu_V0cr- .standardtemplates_PinnedTemplate_2eBei .standardtemplates_StandardNotificationDescription_1Ldq1 {
+  color: var(--wallaby-text);
+}
+
+.quickaccessmenu_QuickAccessMenu_V0cr- .standardtemplates_StandardTemplate_3e_DB .standardtemplates_StandardNotificationSubText_2XcN2,
+.quickaccessmenu_QuickAccessMenu_V0cr- .standardtemplates_PinnedTemplate_2eBei .standardtemplates_StandardNotificationSubText_2XcN2 {
+  color: var(--wallaby-muted);
+}
+
+/* Keep the current tab visible after focus moves into the right pane.
+   Steam's animation otherwise overrides its resting background. */
+.quickaccessmenu_Tab_1S76C.quickaccessmenu_Selected_2QHMu {
+  animation: none !important;
+  background: var(--wallaby-view) !important;
+  color: var(--wallaby-accent) !important;
+}
+.quickaccessmenu_Tab_1S76C.quickaccessmenu_Selected_2QHMu svg {
+  color: var(--wallaby-accent) !important;
+}
+.gpfocus .quickaccessmenu_Tab_1S76C.quickaccessmenu_Selected_2QHMu,
+.quickaccessmenu_Tab_1S76C.quickaccessmenu_Selected_2QHMu.gpfocus {
+  background: var(--wallaby-accent) !important;
+  color: var(--wallaby-background) !important;
+}
+.gpfocus .quickaccessmenu_Tab_1S76C.quickaccessmenu_Selected_2QHMu svg,
+.quickaccessmenu_Tab_1S76C.quickaccessmenu_Selected_2QHMu.gpfocus svg {
+  color: var(--wallaby-background) !important;
+}

@@ -1,0 +1,27 @@
+/* Adapted from Srcery v0.7.0; see LICENSE and ATTRIBUTION.md. */
+.gamepadtoasts_GamepadToastPopup_3YTh8 .shorttemplates_ShortTemplate_29NLb  {
+  background-color: var(--wallaby-view);
+}
+
+.gamepadtoasts_GamepadToastPopup_3YTh8 .shorttemplates_ShortTemplate_29NLb .shorttemplates_Header_2wU4t,
+.gamepadtoasts_GamepadToastPopup_3YTh8 .shorttemplates_ShortTemplate_29NLb .shorttemplates_Icon_2TlJy,
+.gamepadtoasts_GamepadToastPopup_3YTh8 .shorttemplates_ShortTemplate_29NLb .shorttemplates_Title_BkpSl {
+  color: var(--wallaby-text);
+}
+
+.gamepadtoasts_GamepadToastPopup_3YTh8 .notificationcontent_PinnedBody_3V6Rp {
+  color: var(--wallaby-text);
+}
+
+.gamepadtoasts_GamepadToastPopup_3YTh8 .notificationcontent_Timestamp_3q7nN {
+  color: var(--wallaby-muted);
+}
+
+.gamepadtoasts_GamepadToastPopup_3YTh8 .notificationcontent_StandardNotificationDescription_zB56A,
+.gamepadtoasts_GamepadToastPopup_3YTh8 .notificationcontent_StandardNotificationSubText_EVwRp {
+  color: var(--wallaby-text);
+}
+
+.gamepadtoasts_GamepadToastPopup_3YTh8 .notificationcontent_FriendInGameAppColor_3uw_G {
+  color: var(--wallaby-positive);
+}

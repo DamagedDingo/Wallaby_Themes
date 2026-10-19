@@ -1,0 +1,213 @@
+/* Adapted from Srcery v0.7.0; see LICENSE and ATTRIBUTION.md. */
+@keyframes wallaby-mainmenuapprunning_ItemFocusAnim-darkerGrey_3hDT4 {
+  from {
+    background: var(--wallaby-accent);
+    color: var(--wallaby-background);
+  }
+
+  to {
+    background: var(--wallaby-button);
+    color: var(--wallaby-text);
+  }
+}
+
+.mainmenuapprunning_AppColumn_3FAI9,
+.mainmenu_Menu_23IDi.mainmenu_Collapsed_3I23q {
+  background: var(--wallaby-background);
+}
+
+.mainmenuapprunning_NavigationColumn_27FEg,
+.mainmenuapprunning_NavigationColumn_27FEg::before {
+  background: none;
+  content: none;
+}
+
+.mainmenuapprunning_NavigationColumn_27FEg.mainmenuapprunning_NavColumnFocused_2wkOt,
+.mainmenuapprunning_AppColumn_3FAI9.mainmenuapprunning_FocusedColumn_lz9Db {
+  background: var(--wallaby-background);
+}
+
+/* Center column background */
+.mainmenuapprunning_ScrollMask_322FV {
+  background: var(--wallaby-surface);
+}
+
+.mainmenuapprunning_NavigationBox_36vNU .mainmenuapprunning_NavigationMenuItem_1G0K4 {
+  color: var(--wallaby-text);
+}
+
+.mainmenuapprunning_NavigationBox_36vNU .mainmenuapprunning_NavigationMenuItem_1G0K4.gpfocus.gpfocuswithin {
+  background: var(--wallaby-button);
+  color: var(--wallaby-accent);
+  animation-name: wallaby-mainmenuapprunning_ItemFocusAnim-darkerGrey_3hDT4;
+}
+
+.mainmenuapprunning_NavigationBox_36vNU .mainmenuapprunning_NavigationMenuItem_1G0K4 .mainmenuapprunning_ActiveDot_13YbV {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  margin-left: 4px;
+  margin-top: -2px;
+}
+
+.mainmenuapprunning_NavigationBox_36vNU .mainmenuapprunning_NavigationMenuItem_1G0K4 .mainmenuapprunning_ActiveDot_13YbV::before {
+  content: "›";
+  color: var(--wallaby-text);
+  font-size: 1.5rem;
+  z-index: 10;
+}
+
+.mainmenuapprunning_AppColumn_3FAI9.Panel.Focusable:not(.mainmenuapprunning_FocusedColumn_lz9Db) {
+  background-color: var(--wallaby-background);
+}
+
+.mainmenuapprunning_AppColumn_3FAI9 .gamepadtabbedpage_Glyphs_N-f57 {
+  filter: var(--wallaby-light-filter);
+}
+
+/* Achievements */
+
+.mainmenuapprunning_AppColumn_3FAI9 .achievementsheader_StatsBlock__gDkI .achievementsheader_Stat_28omE .achievementsheader_Label_17zZl {
+  color: var(--wallaby-text);
+}
+
+.mainmenuapprunning_AppColumn_3FAI9 .achievementsheader_StatsBlock__gDkI .achievementsheader_Stat_28omE .achievementsheader_TextValue_3SUIg {
+  color: var(--wallaby-text);
+}
+
+.mainmenuapprunning_AppColumn_3FAI9 .achievementslist_AchievementList_1UXC2.achievementspage_List_2kMZ9.Panel.Focusable {
+  background-color: transparent;
+}
+
+.mainmenuapprunning_AppColumn_3FAI9 .achievementslist_AchievementListItemBase_2Kmn7.Panel.Focusable {
+  background-color: var(--wallaby-surface);
+}
+
+.mainmenuapprunning_AppColumn_3FAI9 .achievementslist_Container_cvw8D {
+  color: var(--wallaby-text);
+}
+
+.mainmenuapprunning_AppColumn_3FAI9 .achievementslist_AchievementTitle_17dhG {
+  color: var(--wallaby-accent);
+}
+
+.mainmenuapprunning_AppColumn_3FAI9 .achievementslist_AchievementDescription_1WP2Y {
+  color: var(--wallaby-text);
+}
+
+.mainmenuapprunning_AppColumn_3FAI9 .achievementslist_AchievementGlobalPercentage_VQbek.achievementslist_InBody_2IpxM,
+.mainmenuapprunning_AppColumn_3FAI9 .achievementslist_UnlockDate_2fFW2 {
+  color: var(--wallaby-muted);
+}
+
+.mainmenuapprunning_AppColumn_3FAI9 .achievementslist_AchievementListItemBase_2Kmn7.gpfocuswithin.Panel.Focusable {
+  background-color: var(--wallaby-view);
+}
+
+/* Guides */
+
+.mainmenuapprunning_AppColumn_3FAI9 .overlayguides_GuideList_3p2SR {
+  background-color: transparent;
+}
+
+.mainmenuapprunning_AppColumn_3FAI9 .overlayguides_GuideListItemBase_1etIu.Panel.Focusable {
+  background-color: var(--wallaby-surface);
+}
+
+.mainmenuapprunning_AppColumn_3FAI9 .overlayguides_Container_3UCfp {
+  color: var(--wallaby-text);
+}
+
+.mainmenuapprunning_AppColumn_3FAI9 .overlayguides_GuideTitle_35sEZ,
+.mainmenuapprunning_AppColumn_3FAI9 .overlayguides_GuideAuthor_28tAd {
+  color: var(--wallaby-text);
+}
+
+.mainmenuapprunning_AppColumn_3FAI9 .overlayguides_GuideDescription_DpdGp {
+  color: var(--wallaby-text);
+}
+
+.mainmenuapprunning_AppColumn_3FAI9 .overlayguides_GuideListItemBase_1etIu.gpfocuswithin.Panel.Focusable {
+  background-color: var(--wallaby-view);
+}
+
+.mainmenuapprunning_AppColumn_3FAI9 .overlayguides_GuideDetailsTitle_d2OwZ,
+.mainmenuapprunning_AppColumn_3FAI9 .overlayguides_UGCRating_oTb9Y,
+.mainmenuapprunning_AppColumn_3FAI9 .overlayguides_UGCRating_oTb9Y .overlayguides_UGCTotalRatings_1RTRU {
+  color: var(--wallaby-text);
+}
+
+.mainmenuapprunning_AppColumn_3FAI9 .overlayguides_UGCControls_2Mna7 button.overlayguides_UGCButton_Ejrl6 {
+  background-color: var(--wallaby-accent);
+}
+
+.mainmenuapprunning_AppColumn_3FAI9 .overlayguides_UGCControls_2Mna7 button.overlayguides_UGCButton_Ejrl6.gpfocuswithin {
+  background-color: var(--wallaby-accent);
+}
+
+.mainmenuapprunning_AppColumn_3FAI9 .overlayguides_UGCControls_2Mna7 button.overlayguides_UGCButton_Ejrl6 .overlayguides_ThumbsUpColor_3v3hT {
+  color: var(--wallaby-text);
+}
+
+.mainmenuapprunning_AppColumn_3FAI9 .overlayguides_UGCControls_2Mna7 button.overlayguides_UGCButton_Ejrl6 .overlayguides_ThumbsDownColor_1TqtH {
+  color: var(--wallaby-negative);
+}
+
+.mainmenuapprunning_AppColumn_3FAI9 .overlayguides_GuideDetailsDesc_1wBkh,
+.mainmenuapprunning_AppColumn_3FAI9 .overlayguides_SubSectionDesc_3qm_0 {
+  color: var(--wallaby-text);
+}
+
+.mainmenuapprunning_AppColumn_3FAI9 .overlayguides_SubSectionTitle_vJoi8 {
+  color: var(--wallaby-accent);
+}
+
+.mainmenuapprunning_AppColumn_3FAI9 .overlayguides_TableOfContents_CwN4g .overlayguides_TOCEntry_2bjWQ {
+  color: var(--wallaby-text);
+  background-color: var(--wallaby-view);
+}
+
+/* Notes */
+
+.mainmenuapprunning_AppColumn_3FAI9 .gamepadpagedsettings_PagedSettingsDialog_PageListItem_1ix7r.gamepadpagedsettings_Active_22LLB .gamepadpagedsettings_PageListItem_Title_2PPLv {
+  color: var(--wallaby-text);
+}
+
+.mainmenuapprunning_AppColumn_3FAI9 .gamepadpagedsettings_PagedSettingsDialog_PageListItem_1ix7r.gamepadpagedsettings_Active_22LLB.gpfocuswithin .gamepadpagedsettings_PageListItem_Title_2PPLv,
+.mainmenuapprunning_AppColumn_3FAI9 .gamenotes_NoteEditorArea_3WOF4 {
+  color: var(--wallaby-text);
+}
+
+@keyframes wallaby-focusring_flash_1YTKZ {
+  0% {
+    background-color: rgba(255 255 255 / 8%);
+  }
+
+  100% {
+    background-color: transparent;
+  }
+}
+
+@keyframes wallaby-focusring_fadeOutline_2hZu3 {
+  0% {
+    outline-color: var(--wallaby-view);
+  }
+
+  100% {
+    outline-color: var(--wallaby-muted);
+  }
+}
+
+.focusring_FocusRingRoot_3PH_X .focusring_FocusRing_1IZrQ {
+  animation: wallaby-focusring_flash_1YTKZ .5s ease,
+      focusring_growOutline_Z3LxS .4s ease,
+      wallaby-focusring_fadeOutline_2hZu3 .4s ease,
+      focusring_blinker_3wFMM 1.2s ease-in-out .4s 20;
+  outline: 2px solid var(--wallaby-muted);
+}
+
+/* Yellow guide action buttons need teal foregrounds even when unfocused. */
+.mainmenuapprunning_AppColumn_3FAI9 .overlayguides_UGCControls_2Mna7 button.overlayguides_UGCButton_Ejrl6,
+.mainmenuapprunning_AppColumn_3FAI9 .overlayguides_UGCControls_2Mna7 button.overlayguides_UGCButton_Ejrl6 svg {
+  color: var(--wallaby-background) !important;
+}

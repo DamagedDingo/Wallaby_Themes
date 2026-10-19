@@ -1,0 +1,104 @@
+/* Adapted from Srcery v0.7.0; see LICENSE and ATTRIBUTION.md. */
+:root {
+  --wallaby-keyboard-background: var(--wallaby-background);
+  --wallaby-base-key-background: var(--wallaby-surface);
+  --wallaby-base-key-color: var(--wallaby-text);
+  --wallaby-function-key-background: var(--wallaby-button);
+  --wallaby-function-key-color: var(--wallaby-text);
+  --wallaby-key-background__selected: var(--wallaby-accent);
+  --wallaby-key-color__selected: var(--wallaby-background);
+  --wallaby-key-toggle-background: var(--wallaby-accent);
+  --wallaby-key-toggle-color: var(--wallaby-background)
+}
+
+.DefaultTheme {
+  --foreground-color: var(--wallaby-text) !important;
+  --key-shift-label-color: var(--wallaby-muted) !important;
+  --key-focused-shift-label-color: var(--wallaby-background) !important;
+  --key-emoji-category-background-color: var(--wallaby-background) !important;
+  --key-emoji-row-background-color: var(--wallaby-background) !important;
+  --key-emoji-background-color: var(--wallaby-surface) !important;
+  --key-emoji-color: var(--wallaby-text) !important;
+  --key-emoji-focused-color: var(--wallaby-background) !important;
+
+  /* General variables */
+  --background-color: var(--wallaby-keyboard-background) !important;
+
+  /* Main Keyboard variables */
+  --key-focused-action-button-left-color: var(--wallaby-key-color__selected) !important;
+  --key-focused-action-button-right-color: var(--wallaby-key-color__selected) !important;
+  --key-action-button-glyph-color: var(--wallaby-function-key-color) !important;
+  --key-color: var(--wallaby-base-key-color) !important;
+  --key-focused-color: var(--wallaby-key-color__selected) !important;
+  --key-background-color: var(--wallaby-base-key-background) !important;
+  --key-focused-background-color: var(--wallaby-key-background__selected) !important;
+  --key-meta-color: var(--wallaby-function-key-color) !important;
+  --key-meta-background-color: var(--wallaby-function-key-background) !important;
+
+  /* Function Keys */
+  --key-tab-color: var(--wallaby-function-key-color) !important;
+  --key-tab-background-color: var(--wallaby-function-key-background) !important;
+  --key-caps-color: var(--wallaby-function-key-color) !important;
+  --key-caps-background-color: var(--wallaby-function-key-background) !important;
+  --key-shift-color: var(--wallaby-function-key-color) !important;
+  --key-shift-background-color: var(--wallaby-function-key-background) !important;
+  --key-enter-color: var(--wallaby-function-key-color) !important;
+  --key-enter-background-color: var(--wallaby-function-key-background) !important;
+  --key-enter-action-button-glyph-color: var(--wallaby-key-color__selected) !important;
+  --key-backspace-color: var(--wallaby-function-key-color) !important;
+  --key-backspace-background-color: var(--wallaby-function-key-background) !important;
+  --key-spacebar-color: var(--wallaby-base-key-color) !important;
+  --key-spacebar-background-color: var(--wallaby-base-key-background) !important;
+  --key-spacer-background-color: var(--wallaby-function-key-background) !important;
+
+  /* extendedkey Key variables */
+  --key-extendedkey-background-color: var(--wallaby-key-toggle-background) !important;
+  --key-extendedkey-color: var(--wallaby-background) !important;
+  --key-extendedkey-focused-background-color: var(--wallaby-accent) !important;
+  --key-extendedkey-focused-color: var(--wallaby-key-color__selected) !important;
+  --key-extendedkey-hover-background-color: var(--wallaby-accent) !important;
+  --key-extendedkey-hover-color: var(--wallaby-key-color__selected) !important;
+
+  /* Key Toggle variables */
+  --key-toggleon-background-color: var(--wallaby-key-toggle-background) !important;
+  --key-toggleon-color: var(--wallaby-background) !important;
+  --key-toggleoneshot-color: var(--wallaby-key-toggle-background) !important;
+
+  /* Emoji page variables */
+  --key-emoji-category-highlight-background-color: var(--wallaby-function-key-background) !important;
+  --key-emoji-focused-background-color: var(--wallaby-key-background__selected) !important;
+
+  /* Mouse Pointer variables */
+  --key-touched-background-color: var(--wallaby-key-background__selected) !important;
+  --key-touched-color: var(--wallaby-key-toggle-color) !important;
+  --key-pointer-stroke-color: var(--wallaby-key-toggle-color) !important;
+  --key-pointer-background-color: var(--wallaby-key-toggle-background) !important;
+  --key-deadkey-background-color: var(--wallaby-key-toggle-color) !important;
+  --key-deadkeyinactive-color: var(--wallaby-base-key-color) !important;
+  --key-deadkeyactive-color: var(--wallaby-key-toggle-background) !important;
+}
+
+/* Both keyboard implementations shipped in Steam's current CSS.
+   The second implementation is not yet in CSS Loader's class mappings. */
+.DefaultTheme .virtualkeyboard_KeyboardKey_2KhPX.virtualkeyboard_Touched_3UFQq,
+.DefaultTheme ._3YpL9Gmf8RDdBRfwyhGWtp._2kBKOyaF18bkd-Ur7Y-CGe {
+  color: var(--wallaby-background) !important;
+  background-color: var(--wallaby-accent) !important;
+}
+.DefaultTheme .virtualkeyboard_KeyboardKey_2KhPX.virtualkeyboard_Touched_3UFQq::after,
+.DefaultTheme ._3YpL9Gmf8RDdBRfwyhGWtp._2kBKOyaF18bkd-Ur7Y-CGe::after {
+  animation: none !important;
+  background: none !important;
+  opacity: 0 !important;
+}
+.DefaultTheme .virtualkeyboard_KeyboardSpacer_2LxGP {
+  background-color: var(--wallaby-background) !important;
+}
+
+.virtualkeyboard_ActionButtonGlyph_3VtXf img {
+  filter: var(--wallaby-light-filter);
+}
+
+.virtualkeyboard_KeyboardKey_2KhPX.virtualkeyboard_Focused_21EoN img {
+  filter: var(--wallaby-dark-filter);
+}

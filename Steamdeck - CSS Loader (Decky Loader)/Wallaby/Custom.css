@@ -1,0 +1,156 @@
+/* Adapted from Srcery v0.7.0; see LICENSE and ATTRIBUTION.md. */
+.BasicUI .appdetailsachievementssection_AchievementProgressContainer_3ns91 .appdetailsachievementssection_AchievementProgress_3Rm36 {
+  background: var(--wallaby-accent);
+}
+
+.appdetailssection_Highlight_38t1m.appdetailsachievementssection_HighlightDiv_2xTb6,
+.appdetailssection_Highlight_38t1m.appdetailstradingcardssection_BadgeSection_3g3jm {
+  background-color: var(--wallaby-view);
+}
+
+.appdetailsachievementssection_AchievementCarouselItem_mbFSn.appdetailsachievementssection_Detailed_3KGi6.Panel.Focusable {
+  background: var(--wallaby-button);
+}
+
+.gamepadui_BasicHome_3LYP1.gamepadui_OpaqueBackground_b084m,
+.appdetailsoverview_Container_27RcN {
+  background: var(--wallaby-background) !important;
+}
+
+.BasicUI .appactivityday_Event_UVeN0 .appactivityday_EventHeadline_QCKBq:focus {
+  background: var(--wallaby-accent);
+}
+
+.gamepadhome_TabbedContent_cE1Sa {
+  background: var(--wallaby-view);
+}
+
+.BasicUI .appdetailsachievementssection_AchievementProgressContainer_3ns91 {
+  background: var(--wallaby-surface);
+}
+
+.gamepadhomewhatsnew_EventPreviewContainer_1ltOY,
+.gamepadhomewhatsnew_GameIconAndName_1jXSh .gamepadhomewhatsnew_GameName_3H9W-, 
+.localdateandtime_ShortDateAndTime_4K3Bl,
+.localdateandtime_RightSideTitles_3sPON,
+.marquee_Content_2ADpT,
+.gamepadhomerecentgames_RecentGamesHeader_35iRe,
+.gamepadhomefriends_InGameGame_KLo2n .gamepadhomefriends_InLibrary_ho5Qo,
+.appactivityday_Event_UVeN0 .appactivityday_EventHeadline_QCKBq .appactivityday_HeadlineGameName_Gy1Y7 {
+  color: var(--wallaby-text);
+}
+
+.gamepadhomewhatsnew_EventType_1f0dZ,
+.marketingmessages_Header_1QCdV,
+.homestorecarousel_Header_xpRXv,
+.recentlycompleted_Header_NhBU2,
+.gamepadhomefriends_FriendsHeader_1Ejje,
+.appdetailssectionheader_LabelText_3i0ko,
+.gamepadhomerecommended_PlayNextCarouselTitle_2r7cQ,
+.gamepadhomerecommended_PlayNextCarouselSubHeading_2VByW,
+.recentlycompleted_PatchNotes_2_b6L,
+.personanameandstatus_playerName_r62qz,
+.personanameandstatus_gameName_2wpap,
+.gamepadhomefriends_Title_EZ-F-,
+.appactivityday_AppActivityDate_19LfM,
+.appdetailsachievementssection_Name_39Y0,
+.appdetailsachievementssection_Desc_2gLHb,
+.comment_thread_CommentText_3Xbao,
+.appdetailsachievementssection_Name_39Y01,
+.appactivityday_StoreGameCapsule_1OYOt,
+.appdetailsplaysection_PlayBarDetailLabel_2TYVG {
+  color: var(--wallaby-text) !important;
+}
+
+.personanameandstatus_gameName_2wpap {
+  font-size: 10px;
+}
+
+.gamepadlibrary_GamepadLibrary_ZBBhe,
+.gamepadsearch_GamepadSearch_P_AlE,
+.mediapage_MediaPage_gG1JN,
+.BasicUI .basicappdetailssectionstyler_AppActionButton_QsZdW /* Play button BG */ {
+  background: none;
+}
+
+.gamepadsearch_ResultTemplateDescriptionRow_19p6s > * {
+  color: var(--wallaby-text) !important;
+}
+
+/* Game Play View */
+
+/* Game launch menu buttons labels */
+.BasicUI .appdetailsplaysection_MenuButton_3qDWQ > svg,
+.BasicUI .appactionbutton_PlayButtonContainer_1FnJ6 .appactionbutton_ButtonChild_2AzIX .appactionbutton_ButtonText_33cnX,
+.BasicUI .appactionbutton_PlayButtonContainer_1FnJ6 .appactionbutton_ButtonChild_2AzIX svg {
+  color: var(--wallaby-text);
+}
+
+.appdetailsplaysection_CloudStatusRow_QvHky > *, /* Steam Cloud Status */
+.appdetailsplaysection_CloudStatusRow_QvHky:not(.gpfocus) .appdetailsplaysection_CloudStatusIcon_1Prjv > svg { /* Steam Cloud Status Icon */
+  color: var(--wallaby-text) !important;
+}
+
+/* Game launch menu buttons */
+.BasicUI .appactionbutton_PlayButtonContainer_1FnJ6 .appactionbutton_ButtonChild_2AzIX,
+.BasicUI .appdetailsplaysection_MenuButton_3qDWQ {
+  background: var(--wallaby-view);
+}
+
+/* Highlighted game launch menu buttons */
+.BasicUI .appactionbutton_PlayButtonContainer_1FnJ6 .appactionbutton_ButtonChild_2AzIX.gpfocus,
+.BasicUI .appdetailsplaysection_MenuButton_3qDWQ.gpfocus {
+  background: var(--wallaby-accent) !important;
+}
+
+.BasicUI .appactionbutton_ButtonChild_2AzIX.Focusable:focus {
+  background: var(--wallaby-accent) !important;
+}
+
+.BasicUI .appactionbutton_Green_3cI5T .appactionbutton_ButtonChild_2AzIX.Focusable:focus {
+  background: var(--wallaby-accent) !important;
+  color: var(--wallaby-background);
+}
+
+/* Highlighted game launch menu buttons labels */
+.BasicUI .appdetailsplaysection_MenuButton_3qDWQ.gpfocus:focus > svg,
+.BasicUI .appactionbutton_PlayButtonContainer_1FnJ6 .appactionbutton_ButtonChild_2AzIX.gpfocus:focus .appactionbutton_ButtonText_33cnX,
+.BasicUI .appactionbutton_PlayButtonContainer_1FnJ6 .appactionbutton_ButtonChild_2AzIX.gpfocus:focus svg {
+  color: var(--wallaby-background);
+}
+
+.appdetailsplaysection_CloudStatusRow_QvHky::before, /* Steam Cloud Status before */
+.appdetailsplaysection_CloudStatusRow_QvHky::after { /* Steam Cloud Status After */
+  background: var(--wallaby-accent);
+}
+
+.appdetailsplaysection_DetailsProgressContainer_25YVD {
+  background: var(--wallaby-surface);
+}
+
+.BasicUI .appdetailsplaysection_DetailsProgressContainer_25YVD .appdetailsplaysection_DetailsProgressBar_1FnTq {
+  background: var(--wallaby-accent);
+}
+
+/* Home */
+
+.salepreviewwidgets_Discounted_35-Ub {
+  background: var(--wallaby-accent);
+}
+
+/* Body comments are normal teal surfaces, not selection backgrounds. */
+.comment_thread_ActivityCommentThread_39nna {
+  background: var(--wallaby-view);
+  color: var(--wallaby-text);
+}
+.BasicUI .appactivityday_Event_UVeN0 .appactivityday_EventHeadline_QCKBq:focus,
+.BasicUI .appactivityday_Event_UVeN0 .appactivityday_EventHeadline_QCKBq:focus .appactivityday_HeadlineGameName_Gy1Y7,
+.salepreviewwidgets_Discounted_35-Ub {
+  color: var(--wallaby-background) !important;
+}
+/* Gamepad focus does not always also set the browser :focus pseudo-class. */
+.BasicUI .appdetailsplaysection_MenuButton_3qDWQ.gpfocus > svg,
+.BasicUI .appactionbutton_PlayButtonContainer_1FnJ6 .appactionbutton_ButtonChild_2AzIX.gpfocus .appactionbutton_ButtonText_33cnX,
+.BasicUI .appactionbutton_PlayButtonContainer_1FnJ6 .appactionbutton_ButtonChild_2AzIX.gpfocus svg {
+  color: var(--wallaby-background) !important;
+}

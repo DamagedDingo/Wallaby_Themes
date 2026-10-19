@@ -1,0 +1,265 @@
+/* Adapted from Srcery v0.7.0; see LICENSE and ATTRIBUTION.md. */
+/* Carousel stuff */
+
+.basicgamecarousel_TextBoxCarouselContents_3bvCH.basicgamecarousel_BasicGameCarouselItemMediaContainer_1HIFN.Panel.Focusable.gpfocus.gpfocuswithin {
+  color: var(--wallaby-accent);
+}
+
+.basicgamecarousel_BasicGameCarouselItem_3YYQ9 .basicgamecarousel_TextBoxCarouselContents_3bvCH {
+  background: linear-gradient(313deg, var(--wallaby-surface), var(--wallaby-button));
+}
+
+.BasicUI .appportrait_LibraryItemBox_WYgDg.Focusable:focus,
+.appportrait_LibraryItemBox_WYgDg.appportrait_Portrait_1Pf6J.appportrait_InRecentGames_biTV-.appportrait_BasicMode_3vi6S.Panel.Focusable.gpfocus.gpfocuswithin {
+  box-shadow: 0 16px 24px 0 var(--wallaby-background);
+  outline: 2px solid var(--wallaby-accent);
+}
+
+.BasicUI .basicappdetailssectionstyler_AppDetailsRoot_3fp5y {
+  background: transparent;
+}
+
+/* Turn the header art to grayscale */
+.gamepadhomerecentgames_RecentGamesBackground_1SRox {
+  filter: grayscale(1);
+}
+
+/* Remove hovered game glow */
+.gpfocuswithin ~ .basicgamecarousel_CarouselCapsuleBackgroundGlow_1H3Kf,
+:hover ~ .basicgamecarousel_CarouselCapsuleBackgroundGlow_1H3Kf {
+  opacity: 0;
+}
+
+/* Turn backgrounds black */
+.gamepadui_BasicHome_3LYP1.gamepadui_OpaqueBackground_b084m {
+  background: var(--wallaby-background);
+}
+
+.gamepadhome_TabbedContent_cE1Sa {
+  background: var(--wallaby-background) !important;
+}
+
+.gamepadhomerecentgames_RecentGamesBackgroundFadeGradient_1ksIq {
+  background:
+    -webkit-gradient(
+      linear,
+      left 80%,
+      left 90%,
+      from(rgb(0 0 0 / 0%)),
+      to(var(--wallaby-background))
+    ),
+    -webkit-gradient(
+      linear,
+      0% 0%, 100% 0%,
+      color-stop(1%, var(--wallaby-background)),
+      color-stop(5%, rgb(0 0 0 / 0%)),
+      color-stop(95%, rgb(0 0 0 / 0%)),
+      color-stop(99%, var(--wallaby-background))
+    );
+}
+
+/** What's New */
+
+.gamepadhomewhatsnew_EventInfo_6TGe7 { /* What's new event background */
+  background: var(--wallaby-view);
+}
+
+.gamepadhomewhatsnew_EventInfo_6TGe7:focus { /* What's new event background */
+  background: var(--wallaby-button);
+}
+
+/* Recently Updated */
+.BasicUI .recentlycompleted_RecentlyCompletedItem_3OC7i .recentlycompleted_BottomSection_3LyF6,
+.BasicUI .recentlycompleted_RecentlyCompletedItem_3OC7i .recentlycompleted_GameIconAndName_2RTo4 .recentlycompleted_GameName_1EIQL,
+.BasicUI .recentlycompleted_RecentlyCompletedItem_3OC7i .recentlycompleted_BottomSection_3LyF6 .recentlycompleted_DownloadInfo_1wLpm,
+.BasicUI .recentlycompleted_RecentlyCompletedItem_3OC7i .recentlycompleted_BottomSection_3LyF6 .recentlycompleted_Bytes_TH3M8 {
+  background: var(--wallaby-view);
+  color: var(--wallaby-text);
+}
+
+.BasicUI .recentlycompleted_RecentlyCompletedItem_3OC7i,
+.BasicUI .recentlycompleted_RecentlyCompletedItem_3OC7i .recentlycompleted_GameIconAndName_2RTo4 .recentlycompleted_GameName_1EIQL,
+.BasicUI .recentlycompleted_RecentlyCompletedItem_3OC7i.gpfocus.gpfocuswithin .recentlycompleted_BottomSection_3LyF6 {
+  background: var(--wallaby-view);
+  color: var(--wallaby-text);
+}
+
+.BasicUI .recentlycompleted_RecentlyCompletedItem_3OC7i .recentlycompleted_BottomSection_3LyF6 .recentlycompleted_DownloadInfo_1wLpm {
+  color: var(--wallaby-muted);
+}
+
+.BasicUI .recentlycompleted_RecentlyCompletedItem_3OC7i .recentlycompleted_BottomSection_3LyF6 .recentlycompleted_Bytes_TH3M8 {
+  color: var(--wallaby-text);
+}
+
+.BasicUI .recentlycompleted_RecentlyCompletedItem_3OC7i.gpfocus.gpfocuswithin,
+.BasicUI .recentlycompleted_RecentlyCompletedItem_3OC7i.gpfocus.gpfocuswithin .recentlycompleted_GameIconAndName_2RTo4 .recentlycompleted_GameName_1EIQL,
+.BasicUI .recentlycompleted_RecentlyCompletedItem_3OC7i.gpfocus.gpfocuswithin .recentlycompleted_BottomSection_3LyF6,
+.BasicUI .recentlycompleted_RecentlyCompletedItem_3OC7i.gpfocus.gpfocuswithin .recentlycompleted_BottomSection_3LyF6 .recentlycompleted_DownloadInfo_1wLpm,
+.BasicUI .recentlycompleted_RecentlyCompletedItem_3OC7i.gpfocus.gpfocuswithin .recentlycompleted_BottomSection_3LyF6 .recentlycompleted_Bytes_TH3M8 {
+  background: var(--wallaby-accent);
+  color: var(--wallaby-background);
+}
+
+/* Trending Among Friends */
+.gamecapsule_GameCapsule_fXdhj .gamecapsule_BottomBar_3-GyQ {
+  background: var(--wallaby-view);
+  color: var(--wallaby-text);
+}
+
+.gamecapsule_GameCapsule_fXdhj:focus .gamecapsule_BottomBar_3-GyQ {
+  background: var(--wallaby-accent);
+  color: var(--wallaby-background);
+}
+
+.BasicUI .gamecapsule_GameCapsule_fXdhj .salepreviewwidgets_StoreSaleDiscountBox_2fpFv {
+  color: var(--wallaby-positive);
+}
+
+.BasicUI .gamecapsule_GameCapsule_fXdhj .salepreviewwidgets_StoreOriginalPrice_1EKGZ {
+  color: var(--wallaby-muted);
+}
+
+.BasicUI .gamecapsule_GameCapsule_fXdhj .salepreviewwidgets_StoreSalePriceBox_Wh0L8 {
+  color: var(--wallaby-text);
+}
+
+.BasicUI .gamecapsule_GameCapsule_fXdhj.gpfocus.gpfocuswithin .salepreviewwidgets_StoreSaleDiscountBox_2fpFv {
+  color: var(--wallaby-positive);
+}
+
+.BasicUI .gamecapsule_GameCapsule_fXdhj.gpfocus.gpfocuswithin .salepreviewwidgets_StoreOriginalPrice_1EKGZ {
+  color: var(--wallaby-muted);
+}
+
+.BasicUI .gamecapsule_GameCapsule_fXdhj.gpfocus.gpfocuswithin .salepreviewwidgets_StoreSalePriceBox_Wh0L8 {
+  color: var(--wallaby-background);
+}
+
+/** Friends list (Favorites and In Game) */
+.gamepadhomefriends_FavoriteFriend_3SLpz,
+.gamepadhomefriends_GoToFriends_MVc_6,
+.gamepadhomefriends_InGameGame_KLo2n {
+  background: var(--wallaby-view);
+  color: var(--wallaby-text);
+}
+
+.gamepadhomefriends_FavoriteFriend_3SLpz:focus,
+.gamepadhomefriends_GoToFriends_MVc_6:focus,
+.gamepadhomefriends_InGameGame_KLo2n:focus {
+  background: var(--wallaby-button);
+}
+
+/** Recommended */
+.BasicUI .discoveryqueuewidget_DiscoveryQueueWidgetCtn_1iOb7 .discoveryqueuewidget_WidgetHeaderCtn_3u5R_ {
+  background: linear-gradient(90deg, var(--wallaby-accent) 0%, var(--wallaby-link) 75%, transparent 100%);
+  color: var(--wallaby-muted);
+}
+
+.BasicUI .discoveryqueuewidget_DiscoveryQueueWidgetCtn_1iOb7 .discoveryqueuewidget_WidgetHeaderCtn_3u5R_ .discoveryqueuewidget_WidgetHeaderText_uUpem {
+  color: var(--wallaby-background);
+}
+
+/** Activity */
+.BasicUI .appactivityday_Event_UVeN0 .appactivityday_EventHeadline_QCKBq {
+  background: var(--wallaby-view);
+}
+
+.BasicUI .posttextentry_PostTextEntry_3x31A .posttextentry_PostTextEntryArea_1JlC2,
+.BasicUI .posttextentry_PostTextEntry_3x31A .posttextentry_PostTextEntryArea_1JlC2::placeholder {
+  color: var(--wallaby-text);
+  background: var(--wallaby-view);
+}
+
+.BasicUI .posttextentry_PostTextEntry_3x31A .posttextentry_PostTextEntryArea_1JlC2:focus,
+.BasicUI .posttextentry_PostTextEntry_3x31A .posttextentry_PostTextEntryArea_1JlC2:focus::placeholder {
+  color: var(--wallaby-background);
+  background: var(--wallaby-accent);
+}
+
+.BasicUI .appactivityday_Event_UVeN0,
+.BasicUI .appactivityday_Event_UVeN0 .appactivityday_EventBody_NEMXh {
+  background: var(--wallaby-button);
+}
+
+.comment_thread_RatingBar_1yWgP .comment_thread_LikeCount_3grvn,
+.comment_thread_RatingBar_1yWgP .comment_thread_CommentCount_2RkIc,
+.comment_thread_RatingBar_1yWgP .comment_thread_ReactionCount_1S3Q9 {
+  background: var(--wallaby-surface);
+}
+
+/** Your Stuff */
+.BasicUI .appdetailssection_AppDetailsSectionContainer_31ptF.appdetailssection_RightColumnSection_3KfxI {
+  background: var(--wallaby-button);
+}
+
+.BasicUI .appdetailssection_Highlight_38t1m { /* You've unlocked 1/9 (11%)  */
+  background: var(--wallaby-view);
+}
+
+.BasicUI button.DialogButton.appdetailsbutton_AppDetailsButton_3Cdin.appdetailsbutton_BottomRight_3nJyY:not(.gpfocus) {
+  color: var(--wallaby-text);
+  background: var(--wallaby-view);
+}
+
+.BasicUI button.DialogButton.appdetailsbutton_AppDetailsButton_3Cdin.appdetailsbutton_BottomRight_3nJyY.gpfocus.gpfocuswithin {
+  color: var(--wallaby-background);
+  background: var(--wallaby-accent);
+}
+
+/** Community */
+.BasicUI .appdetailscommunityfeed_CommunityItem_3QS6O {
+  background: var(--wallaby-view);
+}
+
+/** Game Info */
+.BasicUI .appdetailsgameinfopanel_Container_2jPMy .appdetailsgameinfopanel_SectionContainer_1uS70 .appdetailsgameinfopanel_GameDescription_3GkV1,
+.appdetailsgameinfopanel_AssociationList_2ZcNQ .appdetailsgameinfopanel_Association_-9icu .appdetailsgameinfopanel_Name_2j8Xh,
+.appdetailsgameinfopanel_Container_2jPMy .appdetailsgameinfopanel_Stats_3cntz .appdetailsgameinfopanel_Release_1OWQ9 .appdetailsgameinfopanel_Date_izVv8 {
+  color: var(--wallaby-text);
+}
+
+.appdetailsgameinfopanel_AssociationList_2ZcNQ .appdetailsgameinfopanel_Label_1vYL2,
+.appdetailsgameinfopanel_Release_1OWQ9 .appdetailsgameinfopanel_Label_1vYL2 {
+  color: var(--wallaby-text);
+}
+
+.appdetailsfeatureicon_Container_1SIa8 .appdetailsfeatureicon_Icon_2RwHE {
+  filter: var(--wallaby-light-filter);
+  opacity: 1;
+}
+
+.appdetailsfeatureicon_Container_1SIa8 .appdetailsfeatureicon_Label_1VoVz {
+  color: var(--wallaby-text);
+}
+
+.appdetailsgameinfopanel_DeckVerifiedInfo_IIJei {
+  color: var(--wallaby-text);
+  background: var(--wallaby-button);
+}
+
+.appdetailsgameinfopanel_DeckVerifiedInfo_IIJei .appdetailsgameinfopanel_Details_3sfpA {
+  color: var(--wallaby-text);
+  background: var(--wallaby-view);
+}
+
+.appdetailsgameinfopanel_DeckVerifiedInfo_IIJei .appdetailsgameinfopanel_Details_3sfpA:focus {
+  color: var(--wallaby-background);
+  background: var(--wallaby-accent);
+}
+
+.BasicUI .appdetailsprimarylinkssection_Anchor_DY4_w {
+  background: var(--wallaby-view);
+}
+
+.BasicUI .appdetailsprimarylinkssection_Anchor_DY4_w.gpfocus.gpfocuswithin {
+  background: var(--wallaby-accent);
+}
+
+.BasicUI .appdetailsprimarylinkssection_Anchor_DY4_w .appdetailsprimarylinkssection_Link_1b6LY .appdetailsprimarylinkssection_Text_2sNDj {
+  color: var(--wallaby-text);
+}
+
+.BasicUI .appdetailsprimarylinkssection_Anchor_DY4_w.gpfocus.gpfocuswithin .appdetailsprimarylinkssection_Link_1b6LY .appdetailsprimarylinkssection_Text_2sNDj {
+  color: var(--wallaby-background);
+}

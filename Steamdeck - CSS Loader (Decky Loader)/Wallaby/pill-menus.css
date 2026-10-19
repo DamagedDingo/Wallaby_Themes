@@ -1,0 +1,46 @@
+/* Adapted from Srcery v0.7.0; see LICENSE and ATTRIBUTION.md. */
+.gamepadtabbedpage_Tab_3eEbS {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+/* Text */
+.gamepadtabbedpage_TabCount_1ui4I,
+.gamepadtabbedpage_TabIcon_3Ebb3,
+.gamepadtabbedpage_TabTitle_1nq0i {
+  color: var(--wallaby-text);
+}
+
+/* Clicked but not released */
+.gamepadtabbedpage_Tab_3eEbS:hover {
+  background: var(--wallaby-surface);
+}
+
+/* Hover Highlighted Text */
+.gamepadtabbedpage_Tab_3eEbS.gamepadtabbedpage_Selected_3Gp1b.gpfocus .gamepadtabbedpage_TabTitle_1nq0i,
+.gamepadtabbedpage_Tab_3eEbS.gamepadtabbedpage_Selected_3Gp1b.gpfocus .gamepadtabbedpage_TabCount_1ui4I,
+.gamepadtabbedpage_Tab_3eEbS.gamepadtabbedpage_Selected_3Gp1b.gpfocus .gamepadtabbedpage_TabIcon_3Ebb3 {
+  color: var(--wallaby-accent);
+}
+
+/* Hover Highlighted Bg */
+.gamepadtabbedpage_Tab_3eEbS.gamepadtabbedpage_Selected_3Gp1b.gpfocus {
+  background: var(--wallaby-button-hover);
+}
+
+/* Highlighted Bg */
+.gamepadtabbedpage_Tab_3eEbS.gamepadtabbedpage_Selected_3Gp1b {
+  background: var(--wallaby-view);
+}
+
+/* Friends playing pills label */
+.appdetailsfriendssection_FriendsPlayingNowBadge_38sNQ.appdetailsfriendssection_InFriendsTab_15Vpl.appdetailsfriendssection_TabSelected_mHKj- {
+  color: var(--wallaby-background);
+  background-color: var(--wallaby-accent);
+}
+
+/* todo what is this? */
+.appdetailsfriendssection_FriendsSectionSubHeading_30EfX, /* x Friends have played previously */
+.appdetailsfriendssection_AvatarAndLabel_1GCZA .appdetailsfriendssection_PlaytimeStatus_1xGH4 { /* x Hrs played recently */
+  color: var(--wallaby-text);
+}

@@ -1,0 +1,69 @@
+/* Screenshot-driven readability adjustments, v0.2.0. */
+.BasicUI { color: var(--wallaby-text); }
+
+/* Solid chrome stops artwork bleeding through behind text. */
+#header, #header::before, #Footer,
+.gamepadtabbedpage_TabHeaderRowWrapper_2Jobs,
+.gamepadtabbedpage_TabRow_19z_5 {
+  background: var(--wallaby-background) !important;
+  opacity: 1 !important;
+  backdrop-filter: none !important;
+}
+
+#header .searchbar_SearchAndTitleContainer_17M8g .searchbar_SearchFieldBackground_3F4YR,
+#header .searchbar_SearchAndTitleContainer_17M8g .searchbar_SearchBox_2a1-s {
+  background: var(--wallaby-surface) !important;
+  color: var(--wallaby-text) !important;
+  opacity: 1 !important;
+}
+#header .searchbar_SearchAndTitleContainer_17M8g .searchbar_SearchBox_2a1-s::placeholder {
+  color: var(--wallaby-text) !important;
+  opacity: 1;
+}
+#header .searchbar_SearchBox_2a1-s.gpfocus {
+  box-shadow: inset 0 -2px var(--wallaby-accent);
+}
+
+/* Library sort/date captions must be readable even over white cover art. */
+.appportrait_CarouselItemLabel_1Cmux {
+  background: var(--wallaby-background) !important;
+  color: var(--wallaby-text) !important;
+  opacity: 1 !important;
+  backdrop-filter: none !important;
+  text-shadow: none;
+}
+
+/* Primary action uses the theme accent, including Steam's Green variant. */
+.BasicUI .appactionbutton_Green_3cI5T .appactionbutton_ButtonChild_2AzIX,
+.BasicUI .appactionbutton_Green_3cI5T .appactionbutton_ButtonChild_2AzIX.gpfocus,
+.BasicUI .appactionbutton_Green_3cI5T .appactionbutton_ButtonChild_2AzIX:focus {
+  background: var(--wallaby-accent) !important;
+  color: var(--wallaby-background) !important;
+}
+.BasicUI .appactionbutton_Green_3cI5T .appactionbutton_ButtonText_33cnX,
+.BasicUI .appactionbutton_Green_3cI5T .appactionbutton_ButtonChild_2AzIX svg {
+  color: var(--wallaby-background) !important;
+}
+
+/* News body copy, dates and game names stay white; section titles are yellow. */
+.gamepadhomewhatsnew_EventPreviewContainer_1ltOY,
+.gamepadhomewhatsnew_EventInfo_6TGe7,
+.gamepadhomewhatsnew_GameIconAndName_1jXSh .gamepadhomewhatsnew_GameName_3H9W-,
+.localdateandtime_ShortDateAndTime_4K3Bl,
+.localdateandtime_RightSideTitles_3sPON,
+.appdetailsplaysection_PlayBarDetailLabel_2TYVG,
+.appdetailsplaysection_PlayBarDetailLabel_2TYVG > * {
+  color: var(--wallaby-text) !important;
+}
+.gamepadhomewhatsnew_EventType_1f0dZ,
+.recentlycompleted_Header_NhBU2,
+.gamepadhomefriends_FriendsHeader_1Ejje,
+.appdetailssectionheader_LabelText_3i0ko,
+.gamepadhomerecentgames_RecentGamesHeader_35iRe {
+  color: var(--wallaby-accent) !important;
+}
+
+/* Gamepad selection remains obvious without colouring paragraphs yellow. */
+.focusring_FocusRingRoot_3PH_X .focusring_FocusRing_1IZrQ {
+  outline-color: var(--wallaby-accent) !important;
+}

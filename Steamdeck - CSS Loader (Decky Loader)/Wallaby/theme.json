@@ -1,0 +1,166 @@
+{
+  "name": "Wallaby",
+  "author": "Wallaby Themes contributors; based on Srcery by milogert",
+  "version": "v0.3.4",
+  "manifest_version": 8,
+  "target": "System-Wide",
+  "description": "Wallaby teal surfaces, soft yellow focus and light text. Standalone Srcery adaptation; disable overlapping colour themes before enabling.",
+  "inject": {
+    "shared.css": [
+      "All"
+    ],
+    "home-page.css": [
+      "All"
+    ],
+    "system.css": [
+      "SP",
+      "QuickAccess"
+    ],
+    "notifications.css": [
+      "notificationtoasts.*"
+    ],
+    "toggle-switch.css": [
+      "All"
+    ],
+    "pill-menus.css": [
+      "SP",
+      "QuickAccess"
+    ],
+    "friends-list.css": [
+      "SP"
+    ],
+    "downloads.css": [
+      "SP"
+    ],
+    "library.css": [
+      "SP"
+    ],
+    "Custom.css": [
+      "SP"
+    ],
+    "account-page.css": [
+      "SP"
+    ],
+    "loader.css": [
+      "SP",
+      "QuickAccess"
+    ],
+    "add-friend.css": [
+      "SP"
+    ],
+    "progress-bar.css": [
+      "All"
+    ],
+    "achievements.css": [
+      "All"
+    ],
+    "readability.css": [
+      "SP",
+      "MainMenu",
+      "QuickAccess"
+    ]
+  },
+  "patches": {
+    "Steam Menu": {
+      "type": "checkbox",
+      "default": "Yes",
+      "values": {
+        "Yes": {
+          "main-menu.css": [
+            "MainMenu"
+          ]
+        },
+        "No": {}
+      }
+    },
+    "Quick Access Menu": {
+      "type": "checkbox",
+      "default": "Yes",
+      "values": {
+        "Yes": {
+          "quick-access-menu.css": [
+            "QuickAccess"
+          ]
+        },
+        "No": {}
+      }
+    },
+    "Settings": {
+      "type": "checkbox",
+      "default": "Yes",
+      "values": {
+        "Yes": {
+          "settings.css": [
+            "SP"
+          ]
+        },
+        "No": {}
+      }
+    },
+    "Controls": {
+      "type": "checkbox",
+      "default": "Yes",
+      "values": {
+        "Yes": {
+          "Components.css": [
+            "SP",
+            "QuickAccess",
+            "MainMenu"
+          ]
+        },
+        "No": {}
+      }
+    },
+    "Controller Settings": {
+      "type": "checkbox",
+      "default": "Yes",
+      "values": {
+        "Yes": {
+          "controller-settings.css": [
+            "SP",
+            "MainMenu"
+          ]
+        },
+        "No": {}
+      }
+    },
+    "In-Game Overlay": {
+      "type": "checkbox",
+      "default": "Yes",
+      "values": {
+        "Yes": {
+          "in-game-overlay.css": [
+            "MainMenu"
+          ]
+        },
+        "No": {}
+      }
+    },
+    "Dialogs and Context Menus": {
+      "type": "checkbox",
+      "default": "Yes",
+      "values": {
+        "Yes": {
+          "modals/styled-modals.css": [
+            "SP",
+            "MainMenu",
+            "QuickAccess"
+          ]
+        },
+        "No": {}
+      }
+    },
+    "Keyboard": {
+      "type": "checkbox",
+      "default": "Yes",
+      "values": {
+        "Yes": {
+          "keyboards/tormak.css": [
+            "All"
+          ]
+        },
+        "No": {}
+      }
+    }
+  }
+}

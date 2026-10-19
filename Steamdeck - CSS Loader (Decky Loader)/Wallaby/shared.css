@@ -1,0 +1,23 @@
+/* Wallaby palette from KDE Plasma/color-schemes/Wallaby.colors. */
+:root {
+  --wallaby-background: #1a5d6c;
+  --wallaby-surface: #2a6c7a;
+  --wallaby-view: #347483;
+  --wallaby-button: #488693;
+  --wallaby-button-hover: #5f93a0;
+  --wallaby-text: #f2f2f2;
+  --wallaby-muted: #c6c6c6;
+  --wallaby-accent: #f6df62;
+  --wallaby-accent-hover: #ffe870;
+  --wallaby-link: #63d0df;
+  --wallaby-positive: #92cf9c;
+  --wallaby-negative: #fda1a0;
+  --wallaby-warning: #ffad00;
+  --wallaby-visited: #a1c0eb;
+  --wallaby-dark-filter: brightness(0) saturate(100%) invert(28%) sepia(25%) saturate(1164%) hue-rotate(144deg) brightness(94%) contrast(89%);
+  --wallaby-light-filter: brightness(0) saturate(100%) invert(97%);
+}
+
+@keyframes wallabySettingsFocus {
+  from, to { background: var(--wallaby-accent); color: var(--wallaby-background); }
+}

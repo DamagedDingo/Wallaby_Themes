@@ -1,0 +1,38 @@
+/* Adapted from Srcery v0.7.0; see LICENSE and ATTRIBUTION.md. */
+.fastscrolloverlay_FastScrollOverlay_1gRvM.fastscrolloverlay_Visible_pdiNo.gpfocus.gpfocuswithin {
+  color: var(--wallaby-accent);
+  backdrop-filter: blur(4px);
+}
+
+.appportrait_Medium_3SNGK .libraryassetimage_Title_13fGP {
+  color: var(--wallaby-accent);
+  -webkit-text-fill-color: unset;
+  background: transparent;
+  text-shadow: 1px 1px 1px var(--wallaby-surface);
+}
+
+.appportrait_Medium_3SNGK img[src="/images/defaultappimage.png"] {
+  filter: sepia(1);
+}
+
+.shared_svg_library_SteamDeckCompatInfo_2LcFI {
+  background: var(--wallaby-background)
+}
+
+.shared_svg_library_SteamDeckCompatLogo_Tplfb {
+  filter: var(--wallaby-light-filter);
+}
+
+
+/* Covers use an outline on the card; collections use a separate focus ring.
+   Keep both solid yellow, without Steam's fade/blink animation. */
+.BasicUI .appportrait_LibraryItemBox_WYgDg.Focusable:focus,
+.BasicUI .appportrait_LibraryItemBox_WYgDg.gpfocus {
+  outline: 2px solid var(--wallaby-accent) !important;
+  outline-offset: 2px;
+  animation: none !important;
+}
+.gamepadlibrary_GamepadLibrary_ZBBhe .focusring_FocusRingRoot_3PH_X .focusring_FocusRing_1IZrQ {
+  outline: 2px solid var(--wallaby-accent) !important;
+  animation: none !important;
+}

@@ -1,0 +1,26 @@
+/* Adapted from Srcery v0.7.0; see LICENSE and ATTRIBUTION.md. */
+.friendslist_InvitesListWrapper_2AblE .friendinvites_InvitesList_3i8Fo {
+  background-color: var(--wallaby-background);
+}
+
+.friendslist_InvitesListWrapper_2AblE .friendinvites_FriendCodeSection_39nte .friendinvites_FriendCode_27408 {
+  background-color: var(--wallaby-background);
+}
+
+.friendslist_InvitesListWrapper_2AblE .friendinvites_FriendCodeSection_39nte .friendinvites_FriendCode_27408 .friendinvites_Code_1-bTQ {
+  color: var(--wallaby-positive);
+}
+
+.friendslist_InvitesListWrapper_2AblE .friendinvites_InvitesRow_35_aF.gpfocuswithin {
+  background-color: var(--wallaby-button);
+}
+
+.friendslist_InvitesListWrapper_2AblE .friendinvites_AddFriendSection_3BjIx .friendinvites_Title_1ZEdD,
+.friendslist_InvitesListWrapper_2AblE .friendinvites_AddFriendSection_3BjIx .friendinvites_Description_KI_gF {
+  color: var(--wallaby-text);
+}
+
+.friendslist_InvitesListWrapper_2AblE .friendinvites_Caption__XK9j,
+.friendslist_InvitesListWrapper_2AblE .friendinvites_InvitesSectionHeader_3B_sJ {
+  color: var(--wallaby-text);
+}

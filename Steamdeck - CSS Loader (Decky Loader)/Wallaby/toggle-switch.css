@@ -1,0 +1,97 @@
+
+.gamepadslider_SliderControlAndNotches_1Cccx .gamepadslider_SliderHandle_2yVKj {
+  background: var(--wallaby-accent) !important;
+  border-color: var(--wallaby-background) !important;
+}
+
+.gamepaddialog_Field_S-_La.gpfocuswithin .gamepaddropdown_DropDownControlButton_28bny,
+.gamepaddialog_Field_S-_La.gpfocuswithin .gamepaddialog_Button_1kn70 {
+  background: var(--wallaby-button);
+  color: var(--wallaby-accent);
+}
+
+
+
+
+
+.gamepaddialog_Field_S-_La.gpfocuswithin .gamepadslider_SliderNotchLabel_u_sH1 {
+  color: var(--wallaby-background) !important;
+}
+
+.gamepadslider_SliderNotchTick_Fv1Ht.gamepadslider_TickActive_1gnUV {
+  background-color: var(--wallaby-accent);
+}
+
+.gamepaddialog_Field_S-_La.gpfocuswithin .gamepadslider_SliderNotchTick_Fv1Ht {
+  background-color: var(--wallaby-accent);
+}
+
+.gamepaddialog_Field_S-_La.gpfocuswithin .gamepadslider_SliderNotchTick_Fv1Ht.gamepadslider_TickActive_1gnUV {
+  background-color: var(--wallaby-background);
+}
+
+.gamepadslider_SliderControlAndNotches_1Cccx:not(.gamepadslider_Disabled_1lI1N).gpfocus .gamepadslider_SliderHandle_2yVKj {
+  background: var(--wallaby-accent) !important;
+}
+
+.gamepadslider_Icon_21uKi svg {
+  color: var(--wallaby-text);
+}
+
+.gamepadslider_SliderTrack_Mq25N {
+  --left-track-color: var(--wallaby-accent);
+}
+
+
+/* Off: dark rail with a white knob. On: yellow rail with a dark teal knob.
+   Suppress Steam's sliding colour overlay, but retain knob movement. */
+.gamepaddialog_Toggle_24G4g .gamepaddialog_ToggleRail_2JtC3 {
+  background: var(--wallaby-background) !important;
+  box-shadow: inset 0 0 0 1px var(--wallaby-button-hover);
+}
+.gamepaddialog_Toggle_24G4g .gamepaddialog_ToggleRail_2JtC3::before {
+  background: none !important;
+  opacity: 0 !important;
+}
+.gamepaddialog_Toggle_24G4g .gamepaddialog_ToggleSwitch_3__OD {
+  background: var(--wallaby-text) !important;
+  border-color: var(--wallaby-background) !important;
+  box-shadow: none !important;
+}
+.gamepaddialog_Toggle_24G4g.gamepaddialog_On_3ld7T .gamepaddialog_ToggleRail_2JtC3 {
+  background: var(--wallaby-accent) !important;
+  box-shadow: inset 0 0 0 2px var(--wallaby-background);
+}
+.gamepaddialog_Toggle_24G4g.gamepaddialog_On_3ld7T .gamepaddialog_ToggleSwitch_3__OD {
+  background: var(--wallaby-background) !important;
+}
+.gamepaddialog_Toggle_24G4g.gpfocus::after {
+  background: var(--wallaby-background) !important;
+}
+
+/* Sliders invert to teal inside yellow focused rows. Cover both direct
+   slider focus and focus inherited from a settings/Quick Access field. */
+.gamepadslider_SliderTrack_Mq25N {
+  background-color: var(--wallaby-button) !important;
+}
+:is(.gamepaddialog_Field_S-_La, .gamepadslider_SliderControlAndNotches_1Cccx):is(.gpfocus, .gpfocuswithin) .gamepadslider_SliderTrack_Mq25N {
+  --left-track-color: var(--wallaby-background) !important;
+  --default-value-track-color: var(--wallaby-surface) !important;
+  background-color: var(--wallaby-button-hover) !important;
+}
+:is(.gamepaddialog_Field_S-_La, .gamepadslider_SliderControlAndNotches_1Cccx):is(.gpfocus, .gpfocuswithin) .gamepadslider_SliderHandle_2yVKj,
+.gamepadslider_SliderControlAndNotches_1Cccx:not(.gamepadslider_Disabled_1lI1N).gpfocus .gamepadslider_SliderHandle_2yVKj {
+  background: var(--wallaby-background) !important;
+  border-color: var(--wallaby-background) !important;
+}
+:is(.gamepaddialog_Field_S-_La, .gamepadslider_SliderControlAndNotches_1Cccx):is(.gpfocus, .gpfocuswithin) .gamepadslider_Icon_21uKi,
+:is(.gamepaddialog_Field_S-_La, .gamepadslider_SliderControlAndNotches_1Cccx):is(.gpfocus, .gpfocuswithin) .gamepadslider_Icon_21uKi svg,
+:is(.gamepaddialog_Field_S-_La, .gamepadslider_SliderControlAndNotches_1Cccx):is(.gpfocus, .gpfocuswithin) .gamepadslider_SliderNotchLabel_u_sH1 {
+  color: var(--wallaby-background) !important;
+}
+:is(.gamepaddialog_Field_S-_La, .gamepadslider_SliderControlAndNotches_1Cccx):is(.gpfocus, .gpfocuswithin) .gamepadslider_SliderNotchTick_Fv1Ht {
+  background-color: var(--wallaby-button-hover) !important;
+}
+:is(.gamepaddialog_Field_S-_La, .gamepadslider_SliderControlAndNotches_1Cccx):is(.gpfocus, .gpfocuswithin) .gamepadslider_SliderNotchTick_Fv1Ht.gamepadslider_TickActive_1gnUV {
+  background-color: var(--wallaby-background) !important;
+}

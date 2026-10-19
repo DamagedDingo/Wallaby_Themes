@@ -1,0 +1,42 @@
+/* Adapted from Srcery v0.7.0; see LICENSE and ATTRIBUTION.md. */
+@keyframes downloads_ItemFocusAnim-darkGrey_2_NVa {
+  from {
+    background: var(--wallaby-button);
+    color: var(--wallaby-text);
+  }
+
+  to {
+    background: var(--wallaby-view);
+    color: var(--wallaby-text);
+  }
+}
+
+@keyframes downloads_ItemFocusAnimBorder-darkGrey_m8Agf {
+  from {
+    border-color: var(--wallaby-button);
+  }
+
+  to {
+    border-color: var(--wallaby-button-hover);
+  }
+}
+
+.downloads_DownloadsPage_1bq4x {
+  background: none;
+}
+
+.BasicUI .downloadgraph_GraphAndStats_3KDkL {
+  background: var(--wallaby-surface);
+}
+
+.downloads_SectionItem_1VNuY.downloads_Active_IbePL {
+  background: var(--wallaby-view);
+}
+
+.downloads_Active_IbePL .downloads_SectionList_OINnO {
+  border-color: var(--wallaby-background);
+}
+
+.downloads_Active_IbePL.gpfocuswithin .downloads_SectionList_OINnO {
+  border-color: var(--wallaby-button-hover);
+}

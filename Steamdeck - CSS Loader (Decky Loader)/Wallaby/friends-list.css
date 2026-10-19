@@ -1,0 +1,51 @@
+/* Adapted from Srcery v0.7.0; see LICENSE and ATTRIBUTION.md. */
+.FriendsListAndChatsSteamDeck .GamepadMode.friendlist {
+  border-right: none;
+}
+
+.FriendsListAndChatsSteamDeck .FriendsListSteamDeckTopSection .TabPanelHeader {
+  color: var(--wallaby-text);
+}
+
+.FriendsListAndChatsSteamDeck .FriendsListSteamDeckTopSection,
+.FriendsListAndChatsSteamDeck .GamepadMode.friendlist.gpfocuswithin .FriendsListSteamDeckTopSection,
+.FriendsListAndChatsSteamDeck .GamepadMode.friendlist,
+.FriendsListAndChatsSteamDeck .SteamDeckChats .multiChatDialog {
+  background: transparent;
+  box-shadow: none;
+}
+
+.FriendsListAndChatsSteamDeck .FriendsListSteamDeckTabs .friendslist_TabBumper_3Jr0A svg path,
+.FriendsListAndChatsSteamDeck .FriendsListSteamDeckTabs .FriendsListTab svg {
+  color: var(--wallaby-muted);
+  stroke: var(--wallaby-view);
+}
+
+.FriendsListAndChatsSteamDeck .FriendsListSteamDeckTabs .FriendsListTab.Active svg {
+  color: var(--wallaby-text);
+}
+
+.chatWindow .chatEntry>*.GamepadMode, .GamepadMode .chatWindow .chatEntry>* {
+  background: var(--wallaby-surface);
+  box-shadow: none;
+}
+
+.multiChatDialog.GamepadMode.gpfocuswithin .chatWindow .chatEntry>*, .GamepadMode .multiChatDialog.gpfocuswithin .chatWindow .chatEntry>* {
+  background: var(--wallaby-view);
+}
+
+.chatentry_chatTextarea_pewyB.GamepadMode.gpfocus, .GamepadMode .chatentry_chatTextarea_pewyB.gpfocus {
+  color: var(--wallaby-accent);
+}
+
+.chatentry_chatEntryControls_2gP0D .chatentry_chatSubmitButton_1IEiK.GamepadMode, .GamepadMode .chatentry_chatEntryControls_2gP0D .chatentry_chatSubmitButton_1IEiK {
+  color: var(--wallaby-muted)
+}
+
+.SteamDeckChats.gpfocuswithin .RightSideButtonContainer .AddFriendButton, .SteamDeckChats.gpfocuswithin .RightSideButtonContainer .inviteAnotherFriendButton {
+  background: var(--wallaby-view);
+}
+
+.ChatHistorySelector {
+  background: transparent;
+}
