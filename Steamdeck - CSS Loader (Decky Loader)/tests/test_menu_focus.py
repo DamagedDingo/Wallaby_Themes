@@ -29,10 +29,10 @@ def translated(text):
                   lambda m: '.' + table.get(m[1], m[1]), text)
 
 
-async def evaluate(expression):
+async def evaluate(expression, title='MainMenu'):
     with urllib.request.urlopen('http://127.0.0.1:8080/json', timeout=5) as response:
         tabs = json.load(response)
-    tab = next(t for t in tabs if t['title'].startswith('MainMenu'))
+    tab = next(t for t in tabs if t['title'].startswith(title))
     async with websockets.connect(tab['webSocketDebuggerUrl'], max_size=16000000) as ws:
         await ws.send(json.dumps({'id': 1, 'method': 'Runtime.evaluate', 'params': {
             'expression': expression, 'returnByValue': True, 'awaitPromise': True}}))
@@ -97,20 +97,20 @@ def colours(kind):
 
 
 class MenuFocusTests(unittest.TestCase):
-    def assert_yellow(self, rows):
+    def assert_gold(self, rows):
         self.assertTrue(rows)
         for row in rows:
             with self.subTest(item=row['text']):
-                self.assertEqual(row['background'], 'rgb(246, 223, 98)', row)
+                self.assertEqual(row['background'], 'rgb(255, 188, 3)', row)
                 self.assertEqual(row['foreground'], 'rgb(26, 93, 108)', row)
                 for colour in row['children']:
                     self.assertEqual(colour, 'rgb(26, 93, 108)', row)
 
     def test_main_menu_focus(self):
-        self.assert_yellow(colours('main'))
+        self.assert_gold(colours('main'))
 
-    def test_context_actions_keep_yellow_focus(self):
-        self.assert_yellow(colours('context'))
+    def test_context_actions_keep_gold_focus(self):
+        self.assert_gold(colours('context'))
 
 
 if __name__ == '__main__':

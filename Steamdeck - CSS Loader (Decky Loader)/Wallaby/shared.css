@@ -1,4 +1,4 @@
-/* Wallaby palette from KDE Plasma/color-schemes/Wallaby.colors. */
+/* Wallaby teal and gold palette, shared with the KDE Wallaby colour scheme. */
 :root {
   --wallaby-background: #1a5d6c;
   --wallaby-surface: #2a6c7a;
@@ -7,8 +7,8 @@
   --wallaby-button-hover: #5f93a0;
   --wallaby-text: #f2f2f2;
   --wallaby-muted: #c6c6c6;
-  --wallaby-accent: #f6df62;
-  --wallaby-accent-hover: #ffe870;
+  --wallaby-accent: #ffbc03;
+  --wallaby-accent-hover: var(--wallaby-accent);
   --wallaby-link: #63d0df;
   --wallaby-positive: #92cf9c;
   --wallaby-negative: #fda1a0;

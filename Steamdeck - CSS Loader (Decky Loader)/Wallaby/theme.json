@@ -1,13 +1,14 @@
 {
   "name": "Wallaby",
   "author": "Wallaby Themes contributors; based on Srcery by milogert",
-  "version": "v0.3.4",
+  "version": "v0.3.8",
   "manifest_version": 8,
   "target": "System-Wide",
-  "description": "Wallaby teal surfaces, soft yellow focus and light text. Standalone Srcery adaptation; disable overlapping colour themes before enabling.",
+  "description": "Wallaby teal surfaces, gold focus and light text, matching KDE Wallaby. Standalone Srcery adaptation; disable overlapping colour themes before enabling.",
   "inject": {
     "shared.css": [
-      "All"
+      "All",
+      "notificationtoasts.*"
     ],
     "home-page.css": [
       "All"

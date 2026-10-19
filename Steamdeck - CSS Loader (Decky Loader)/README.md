@@ -1,9 +1,12 @@
 # Wallaby for Steam Deck CSS Loader
 
 A standalone, one-toggle Wallaby colour theme for Gaming Mode / Big Picture.
-It uses the exact palette from this repository's KDE Wallaby colour scheme,
+It uses the teal palette from this repository's KDE Wallaby colour scheme,
 adapting Srcery v0.7.0's MIT-licensed Steam UI styling. Srcery does not need
 to be installed or enabled. No slider setup or Capy dependencies are needed.
+
+The accent uses gold `#ffbc03`, sampled from the user's Hermes screenshot and
+shared with KDE. Teal surfaces, text and semantic status colours are unchanged.
 
 ## Apply on this Deck
 
@@ -51,7 +54,7 @@ into `~/homebrew/themes/`, then reload CSS Loader and enable it.
 | Buttons | `#488693` |
 | Main text | `#f2f2f2` |
 | Secondary text | `#c6c6c6` |
-| Selection / accent | `#f6df62` |
+| Selection / accent | `#ffbc03` |
 | Links | `#63d0df` |
 | Success | `#92cf9c` |
 | Error | `#fda1a0` |
@@ -160,3 +163,14 @@ python3 tests/test_menu_focus.py
 Both tests were observed failing before the corresponding fixes, then passing.
 An on-device controller-navigation check is still recommended after reloading
 CSS Loader, especially when other menu themes are enabled.
+
+## v0.3.7 — Play button follows focus
+
+The primary Play button returns to a teal background with white text and icon
+when focus moves to Controller or Settings. It uses gold with dark teal text
+only while focused. The former readability override incorrectly applied the
+accent to Steam's Green action variant unconditionally.
+
+`python3 tests/test_play_button_focus.py` exercises Play → Controller → Settings
+using Steam's actual stylesheet and translated theme selectors in an isolated
+iframe. The test failed on both off-Play states before the fix and passes after it.

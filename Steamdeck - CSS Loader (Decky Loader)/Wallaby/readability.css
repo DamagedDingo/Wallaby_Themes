@@ -33,15 +33,20 @@
   text-shadow: none;
 }
 
-/* Primary action uses the theme accent, including Steam's Green variant. */
-.BasicUI .appactionbutton_Green_3cI5T .appactionbutton_ButtonChild_2AzIX,
-.BasicUI .appactionbutton_Green_3cI5T .appactionbutton_ButtonChild_2AzIX.gpfocus,
-.BasicUI .appactionbutton_Green_3cI5T .appactionbutton_ButtonChild_2AzIX:focus {
-  background: var(--wallaby-accent) !important;
-  color: var(--wallaby-background) !important;
+/* Steam's Green variant is teal at rest; gold means current focus only. */
+.BasicUI .appactionbutton_Green_3cI5T .appactionbutton_ButtonChild_2AzIX {
+  background: var(--wallaby-view) !important;
+  color: var(--wallaby-text) !important;
 }
 .BasicUI .appactionbutton_Green_3cI5T .appactionbutton_ButtonText_33cnX,
 .BasicUI .appactionbutton_Green_3cI5T .appactionbutton_ButtonChild_2AzIX svg {
+  color: var(--wallaby-text) !important;
+}
+.BasicUI .appactionbutton_Green_3cI5T .appactionbutton_ButtonChild_2AzIX:is(.gpfocus, :focus-visible) {
+  background: var(--wallaby-accent) !important;
+  color: var(--wallaby-background) !important;
+}
+.BasicUI .appactionbutton_Green_3cI5T .appactionbutton_ButtonChild_2AzIX:is(.gpfocus, :focus-visible) :is(.appactionbutton_ButtonText_33cnX, svg) {
   color: var(--wallaby-background) !important;
 }
 
