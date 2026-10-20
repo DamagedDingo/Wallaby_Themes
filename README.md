@@ -22,3 +22,11 @@ Run the cross-theme palette checks with `python3 tests/test_palette.py`.
 The Hermes-inspired gold is shared by Steam and KDE, including KDE's colour
 scheme, Plasma widget fallback colour and packaged theme. All teal surface
 levels, ordinary text and semantic warning/error/success colours are unchanged.
+
+## KDE launcher contrast
+
+The standard Kickoff launcher needs a small local adjustment to use dark teal
+labels on Wallaby's gold highlight. See the
+[launcher installer and maintenance notes](KDE%20Plasma/launcher/README.md).
+The palette also uses gold for button/taskbar hover and white window-title text
+on teal. Run all desktop checks with `python3 -m unittest discover -s tests -v`.

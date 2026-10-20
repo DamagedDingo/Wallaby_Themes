@@ -22,7 +22,7 @@ IntensityEffect=0
 BackgroundAlternate=95,147,160
 BackgroundNormal=72,134,147
 DecorationFocus=255,188,3
-DecorationHover=99,208,223
+DecorationHover=255,188,3
 ForegroundActive=255,188,3
 ForegroundInactive=198,198,198
 ForegroundLink=99,208,223
@@ -141,7 +141,7 @@ contrast=6
 [WM]
 activeBackground=26,93,108
 activeBlend=26,93,108
-activeForeground=255,188,3
+activeForeground=242,242,242
 inactiveBackground=42,108,122
 inactiveBlend=42,108,122
 inactiveForeground=242,242,242

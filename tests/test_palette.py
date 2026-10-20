@@ -23,7 +23,8 @@ class PaletteTests(unittest.TestCase):
                                 'Colors:Tooltip', 'Colors:View', 'Colors:Window'):
                     for key in ('DecorationFocus', 'ForegroundActive'):
                         self.assertEqual(config[section][key], ACCENT_RGB)
-                self.assertEqual(config['WM']['activeForeground'], ACCENT_RGB)
+                self.assertEqual(config['Colors:Button']['DecorationHover'], ACCENT_RGB)
+                self.assertEqual(config['WM']['activeForeground'], '242,242,242')
 
     def test_launcher_svg_uses_same_gold(self):
         path = ROOT / 'KDE Plasma/desktoptheme/Wallaby/widgets/viewitem.svg'
