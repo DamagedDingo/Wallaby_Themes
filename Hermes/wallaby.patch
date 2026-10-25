@@ -1,0 +1,272 @@
+diff --git a/apps/desktop/src/store/translucency.test.ts b/apps/desktop/src/store/translucency.test.ts
+index 52bddfe288..c5a427699a 100644
+--- a/apps/desktop/src/store/translucency.test.ts
++++ b/apps/desktop/src/store/translucency.test.ts
+@@ -25,6 +25,7 @@ import {
+   isChatWindow,
+   resetTranslucencyPeek,
+   setAppearance,
++  setThemeOpaque,
+   setTranslucency,
+   setTranslucencyFade,
+   setTranslucencyMaterial,
+@@ -64,6 +65,30 @@ describe('window translucency lever', () => {
+     expect(initialTranslucency).toEqual({ ...DARK, mode: GLASS_SUPPORTED ? 'glass' : 'clear' })
+   })
+ 
++  it('suppresses native fade and glass for opaque themes without changing saved preferences', () => {
++    const savedBook = $translucencyBook.get()
++    setTranslucencyMode('glass')
++    setTranslucency(65)
++    setTranslucencyFade(45)
++    const book = JSON.stringify($translucencyBook.get())
++    const original = $translucency.get()
++
++    try {
++      setThemeOpaque(true)
++      expect($translucency.get()).toMatchObject({ intensity: 0, fade: 0 })
++      expect(glassAttr()).toBe(false)
++      expect(clearAttr()).toBe(false)
++      setAppearance('light')
++      expect($translucency.get()).toMatchObject({ intensity: 0, fade: 0 })
++      expect(JSON.stringify($translucencyBook.get())).toBe(book)
++    } finally {
++      setAppearance('dark')
++      setThemeOpaque(false)
++      expect($translucency.get()).toEqual(original)
++      $translucencyBook.set(savedBook)
++    }
++  })
++
+   it('clamps out-of-range input and rounds fractions', () => {
+     setTranslucency(-40)
+     expect($translucency.get().intensity).toBe(TRANSLUCENCY_MIN)
+diff --git a/apps/desktop/src/store/translucency.ts b/apps/desktop/src/store/translucency.ts
+index c9cc7667bf..d18c4c8395 100644
+--- a/apps/desktop/src/store/translucency.ts
++++ b/apps/desktop/src/store/translucency.ts
+@@ -114,10 +114,19 @@ export function setAppearance(appearance: Appearance): void {
+   }
+ }
+ 
++// A theme may require solid rendering without destroying the user's per-mode settings.
++const $themeOpaque = atom(false)
++
++export function setThemeOpaque(opaque: boolean): void {
++  $themeOpaque.set(opaque)
++}
++
+ /** The resolved state for the painted appearance — the shape every consumer reads. */
+-export const $translucency = computed([$translucencyBook, $appearance], (book, appearance) =>
+-  resolveTranslucency(book, appearance, isWindowsPlatform())
+-)
++export const $translucency = computed([$translucencyBook, $appearance, $themeOpaque], (book, appearance, opaque) => {
++  const state = resolveTranslucency(book, appearance, isWindowsPlatform())
++
++  return opaque ? { ...state, intensity: 0, fade: 0 } : state
++})
+ 
+ /** Write an edit against the appearance being painted. */
+ const edit = (patch: Partial<TranslucencyValues>): void => {
+diff --git a/apps/desktop/src/themes/context.tsx b/apps/desktop/src/themes/context.tsx
+index c3422a9b01..23f5254857 100644
+--- a/apps/desktop/src/themes/context.tsx
++++ b/apps/desktop/src/themes/context.tsx
+@@ -19,7 +19,7 @@ import { persistString, persistStringRecord, storedString, storedStringRecord }
+ import { recordFeatureUse } from '@/store/desktop-metrics'
+ import { $activeGatewayProfile, normalizeProfileKey } from '@/store/profile'
+ import { $connection } from '@/store/session'
+-import { setAppearance } from '@/store/translucency'
++import { setAppearance, setThemeOpaque } from '@/store/translucency'
+ 
+ import { $accentOverride } from './accent-override'
+ import {
+@@ -333,6 +333,7 @@ function applyTheme(theme: DesktopTheme, mode: 'light' | 'dark', chatFontFamily
+   // actually painted — a skin that keeps a bright surface in "dark" wants
+   // light's tint. Publishing from here covers the boot paint too, so the very
+   // first resolved state main is told about is already the right one.
++  setThemeOpaque(theme.opaque === true)
+   setAppearance(rendered)
+ 
+   // Brand seeds feed every glass + shadcn token via `color-mix()` in styles.css.
+diff --git a/apps/desktop/src/themes/presets.ts b/apps/desktop/src/themes/presets.ts
+index 32796c58f5..70d3f41035 100644
+--- a/apps/desktop/src/themes/presets.ts
++++ b/apps/desktop/src/themes/presets.ts
+@@ -441,7 +441,71 @@ export const slateTheme: DesktopTheme = {
+   }
+ }
+ 
++/** Wallaby's upstream supplies one palette, not a separate light variant. */
++export const wallabyTheme: DesktopTheme = {
++  name: 'wallaby',
++  label: 'Wallaby',
++  description: 'Wallaby teal and gold — opaque surfaces',
++  ...THEME_PRESET_PALETTES.wallaby,
++  darkColors: THEME_PRESET_PALETTES.wallaby.colors,
++  // Reuse the documented skin CSS hook, removed automatically on theme switch.
++  // Palette hexes alone cannot disable the shared composer's/menu's glass fills.
++  opaque: true,
++  customCSS: `
++    @layer base {
++    :root {
++      --ui-bg-chrome: var(--theme-background-seed) !important;
++      --ui-bg-sidebar: var(--theme-sidebar-seed) !important;
++      --ui-bg-editor: var(--theme-card-seed) !important;
++      --ui-bg-elevated: var(--theme-elevated-seed) !important;
++      --ui-bg-card: var(--theme-card-seed) !important;
++      --ui-bg-input: var(--dt-input) !important;
++      --ui-bg-primary: var(--theme-card-seed) !important;
++      --ui-bg-secondary: var(--theme-card-seed) !important;
++      --ui-bg-tertiary: var(--theme-card-seed) !important;
++      --ui-bg-quaternary: var(--theme-card-seed) !important;
++      --ui-bg-quinary: var(--theme-card-seed) !important;
++      --dt-popover: var(--theme-elevated-seed) !important;
++      --ui-chat-surface-background: var(--theme-background-seed) !important;
++      --ui-editor-surface-background: var(--theme-background-seed) !important;
++      --ui-sidebar-surface-background: var(--theme-sidebar-seed) !important;
++      --ui-terminal-surface-background: var(--theme-background-seed) !important;
++      --ui-success: #92cf9c !important;
++      --ui-text-primary: #f2f2f2 !important;
++      --ui-text-secondary: #f2f2f2 !important;
++      --ui-text-tertiary: #f2f2f2 !important;
++      --ui-text-quaternary: #c6c6c6 !important;
++      --conversation-scaffold-text: #f2f2f2 !important;
++      --conversation-scaffold-meta: #c6c6c6 !important;
++    }
++    html, body, #root {
++      background: var(--theme-background-seed) !important;
++    }
++    *, *::before, *::after {
++      backdrop-filter: none !important;
++      -webkit-backdrop-filter: none !important;
++      filter: none !important;
++    }
++    [data-slot="composer-root"] {
++      --composer-fill: var(--theme-card-seed) !important;
++    }
++    [class*="bg-[color-mix"],
++    [class*="bg-background/"], [class*="bg-card/"],
++    [class*="bg-popover/"], [class*="bg-muted/"],
++    [class*="bg-black/"], [class*="bg-white/"],
++    [data-slot="dialog-overlay"], [data-slot="sheet-overlay"],
++    [data-overlay-surface],
++    :root[data-hermes-clear] [data-overlay-surface],
++    [role="menu"], [role="listbox"], [role="dialog"] {
++      background-color: var(--theme-elevated-seed) !important;
++      backdrop-filter: none !important;
++    }
++    }
++  `
++}
++
+ export const BUILTIN_THEMES: Record<string, DesktopTheme> = {
++  wallaby: wallabyTheme,
+   nous: nousTheme,
+   github: githubTheme,
+   catppuccin: catppuccinTheme,
+diff --git a/apps/desktop/src/themes/types.ts b/apps/desktop/src/themes/types.ts
+index b212f59420..97ced7fd61 100644
+--- a/apps/desktop/src/themes/types.ts
++++ b/apps/desktop/src/themes/types.ts
+@@ -101,6 +101,8 @@ export interface DesktopTheme {
+   colors: DesktopThemeColors
+   /** Hand-tuned dark palette. Skins like `nous` ship one. */
+   darkColors?: DesktopThemeColors
++  /** Render without native/window glass or fade; saved translucency preferences are retained. */
++  opaque?: boolean
+   typography?: Partial<DesktopThemeTypography>
+   /** Light-variant terminal ANSI palette (also the fallback for dark). */
+   terminal?: DesktopTerminalPalette
+diff --git a/apps/shared/src/theme-presets.ts b/apps/shared/src/theme-presets.ts
+index bc0a76b73a..4366822f8e 100644
+--- a/apps/shared/src/theme-presets.ts
++++ b/apps/shared/src/theme-presets.ts
+@@ -64,6 +64,40 @@ const nousAltTint = (pct: number) => `color-mix(in srgb, ${NOUS_ALT_BLUE} ${pct}
+ const nousAltTintTransparent = (pct: number) => `color-mix(in srgb, ${NOUS_ALT_BLUE} ${pct}%, transparent)`
+ 
+ export const THEME_PRESET_PALETTES = {
++  // Wallaby KDE adaptation; preserve its single teal/gold palette in both modes.
++  // https://github.com/DamagedDingo/Wallaby_Themes
++  // main @ 069a43b76e4ce29e4a5dd4184c6929f87a5247d0
++  // Source: KDE Plasma/color-schemes/Wallaby.colors (original: jeremie2/Wallaby).
++  wallaby: {
++    colors: {
++      background: '#1a5d6c',
++      foreground: '#f2f2f2',
++      card: '#2a6c7a',
++      cardForeground: '#f2f2f2',
++      muted: '#2a6c7a',
++      mutedForeground: '#c6c6c6',
++      popover: '#347483',
++      popoverForeground: '#f2f2f2',
++      primary: '#ffbc03',
++      primaryForeground: '#1a5d6c',
++      secondary: '#488693',
++      secondaryForeground: '#f2f2f2',
++      accent: '#5f93a0',
++      accentForeground: '#f2f2f2',
++      border: '#5f93a0',
++      input: '#347483',
++      ring: '#ffbc03',
++      midground: '#ffbc03',
++      midgroundForeground: '#1a5d6c',
++      composerRing: '#ffbc03',
++      destructive: '#fda1a0',
++      destructiveForeground: '#1a5d6c',
++      sidebarBackground: '#1a5d6c',
++      sidebarBorder: '#5f93a0',
++      userBubble: '#347483',
++      userBubbleBorder: '#5f93a0'
++    }
++  },
+   github: {
+     colors: {
+       background: '#ffffff',
+diff --git a/apps/desktop/src/themes/wallaby.test.ts b/apps/desktop/src/themes/wallaby.test.ts
+new file mode 100644
+index 0000000000..0bc4d20bed
+--- /dev/null
++++ b/apps/desktop/src/themes/wallaby.test.ts
+@@ -0,0 +1,41 @@
++import { describe, expect, it } from 'vitest'
++
++import { BUILTIN_THEMES } from './presets'
++import { listAllThemes, resolveTheme } from './user-themes'
++
++describe('Wallaby', () => {
++  it('uses the existing skin CSS hook to defeat inherited glass only while selected', () => {
++    const css = BUILTIN_THEMES.wallaby.customCSS ?? ''
++    expect(css).toContain('backdrop-filter: none !important')
++    expect(css).toContain('-webkit-backdrop-filter: none !important')
++    expect(css).toContain('--composer-fill: var(--theme-card-seed) !important')
++    expect(css).toContain('--ui-text-tertiary: #f2f2f2 !important')
++    expect(css).toContain('--ui-text-secondary: #f2f2f2 !important')
++    expect(css).toContain('--dt-popover: var(--theme-elevated-seed) !important')
++    expect(css).toContain('[data-slot="dialog-overlay"]')
++    expect(css).toContain('@layer base')
++    expect(css).toContain(':root[data-hermes-clear] [data-overlay-surface]')
++    expect(BUILTIN_THEMES.wallaby.opaque).toBe(true)
++    expect(css).not.toMatch(/blur\(|rgba\(|transparent/)
++    expect(BUILTIN_THEMES.nous.customCSS).toBeUndefined()
++  })
++  it('is registered through the standard built-in theme registry with the upstream palette', () => {
++    const theme = BUILTIN_THEMES.wallaby
++    expect(theme).toBeDefined()
++    expect(resolveTheme('wallaby')).toBe(theme)
++    expect(listAllThemes().filter(entry => entry.name === 'wallaby')).toEqual([theme])
++    expect(theme.label).toBe('Wallaby')
++    expect(theme.colors).toMatchObject({
++      background: '#1a5d6c',
++      foreground: '#f2f2f2',
++      card: '#2a6c7a',
++      popover: '#347483',
++      primary: '#ffbc03',
++      primaryForeground: '#1a5d6c'
++    })
++
++    for (const color of Object.values(theme.colors)) {
++      expect(color).toMatch(/^#[\da-f]{6}$/i)
++    }
++  })
++})

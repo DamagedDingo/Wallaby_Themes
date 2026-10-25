@@ -19,6 +19,13 @@ Keep warning orange, error pink and success green distinct from highlights.
 
 Run the cross-theme palette checks with `python3 tests/test_palette.py`.
 
+## Hermes Desktop
+
+[Wallaby for Hermes Desktop](Hermes/README.md) follows the normal built-in theme
+registry with the same teal/gold palette, opaque surfaces, and no blur. The port
+includes a versioned source patch, installation notes, regression tests, and
+screenshots; it is not a CLI YAML skin.
+
 The Hermes-inspired gold is shared by Steam and KDE, including KDE's colour
 scheme, Plasma widget fallback colour and packaged theme. All teal surface
 levels, ordinary text and semantic warning/error/success colours are unchanged.
